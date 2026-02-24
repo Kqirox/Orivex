@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 
 import { AuthProvider } from "@/context/AuthContext";
 import "./globals.css";
@@ -9,12 +9,7 @@ import "./globals.css";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  display: "swap",
-});
-
-const plusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  variable: "--font-jakarta",
+  weight: ["400", "500", "600", "700", "800", "900"],
   display: "swap",
 });
 
@@ -82,7 +77,7 @@ export const viewport: Viewport = {
   userScalable: true,
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
+    { media: "(prefers-color-scheme: dark)", color: "#143c62" },
   ],
 };
 
@@ -96,10 +91,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${plusJakartaSans.variable}`}
+      className={inter.variable}
       suppressHydrationWarning
     >
-      <body className="bg-background text-foreground font-sans antialiased">
+      <body className="bg-surface text-foreground font-sans antialiased">
         <AuthProvider>{children}</AuthProvider>
       </body>
     </html>

@@ -1,13 +1,26 @@
 @import "tailwindcss";
 
-/*
- * Design tokens — configure custom values using Tailwind v4's @theme directive.
- *
- * Example:
- *
- * @theme {
- *   --color-brand: oklch(62% 0.22 270);
- *   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
- *   --font-display: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
- * }
- */
+@theme {
+  /* ─── Typography ─────────────────────────────────────────────────────────── */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* ─── Brand Colors ───────────────────────────────────────────────────────── */
+  --color-primary: #1a73e8;
+  --color-primary-dark: #1a3a6b;
+
+  /* ─── Neutral (from Figma) ───────────────────────────────────────────────── */
+  --color-white-solid: #ffffff;
+  --color-grey-98: #fafafa;
+  --color-background: #ffffff;   /* page background — white-solid */
+  --color-surface: #fafafa;      /* card/section background — grey-98 */
+  --color-foreground: #1a1a2e;
+  --color-muted: #6b7280;
+
+  /* ─── Azure (from Figma — footer, nav dark bg) ───────────────────────────── */
+  --color-azure-23: rgba(20, 60, 98, 1); /* #143c62 */
+  --color-footer-bg: rgba(20, 60, 98, 1);
+
+  /* ─── Accent ─────────────────────────────────────────────────────────────── */
+  --color-accent: #e8873a;
+  --color-star: #f5a623;
+}

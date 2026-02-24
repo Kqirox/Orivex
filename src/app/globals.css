@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens — configure custom values using Tailwind v4's @theme directive.
+ *
+ * Example:
+ *
+ * @theme {
+ *   --color-brand: oklch(62% 0.22 270);
+ *   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+ *   --font-display: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+ * }
+ */

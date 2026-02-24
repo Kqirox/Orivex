@@ -22,5 +22,12 @@
 
   /* ─── Accent ─────────────────────────────────────────────────────────────── */
   --color-accent: #e8873a;
+  --color-accent-subtle: rgba(232, 135, 58, 0.1); /* tint bg — referral card, highlights */
   --color-star: #f5a623;
+
+  /* ─── Border ─────────────────────────────────────────────────────────────── */
+  --color-border: #e5e7eb;
+
+  /* ─── Gradient ───────────────────────────────────────────────────────────── */
+  --gradient-cta: linear-gradient(to right, var(--color-primary-dark), var(--color-accent));
 }

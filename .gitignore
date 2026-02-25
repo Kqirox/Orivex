@@ -37,6 +37,7 @@ build/
 .yarn/
 .pnpm-lock.yaml
 npm-shrinkwrap.json
+node_modules/
 
 # JavaScript/TypeScript
 dist/

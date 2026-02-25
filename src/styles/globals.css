@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0070B6;
+  --color-secondary: #FC641E;
+}
+
+/* Label styles for categories */
+@layer components {
+  /* Base label style */
+  .label-error {
+    @apply text-xs font-bold uppercase tracking-wider text-red-600;
+  }
+
+  .label-warning {
+    @apply text-xs font-bold uppercase tracking-wider;
+    color: var(--color-secondary);
+  }
+
+  .label-information {
+    @apply text-xs font-bold uppercase tracking-wider;
+    color: var(--color-primary);
+  }
+
+  .label-success {
+    @apply text-xs font-bold uppercase tracking-wider text-green-600;
+  }
+
+  .label-default {
+    @apply text-xs font-bold uppercase tracking-wider text-primary;
+  }
+}

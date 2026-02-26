@@ -63,7 +63,7 @@ export function LayoutWrapper({ children }: LayoutWrapperProps) {
 
     // Check if current route is protected
     const isProtectedRoute = PROTECTED_ROUTES.some((route) =>
-      pathname.startsWith(route),
+      pathname?.startsWith(route),
     );
 
     if (isProtectedRoute && !isAuthenticated) {
@@ -85,7 +85,7 @@ export function LayoutWrapper({ children }: LayoutWrapperProps) {
    * Determine if navbar should be visible
    * Hide on specific routes or if authentication is being checked
    */
-  const shouldShowNavbar = !NAVBAR_HIDDEN_ROUTES.includes(pathname);
+  const shouldShowNavbar = pathname ? !NAVBAR_HIDDEN_ROUTES.includes(pathname) : true;
 
   /**
    * Loading state for initial auth check

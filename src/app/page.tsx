@@ -2,23 +2,9 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 import { ArrowRight, TrendingUp, Lock, Users, Zap, Globe, Menu, X } from 'lucide-react'
+import TestimonialSection from '@/components/landing/TestimonialSection'
+import { useInView } from '../../lib/hooks/use-in-view';
 
-/* ─── useInView ──────────────────────────────────────────────────────────── */
-function useInView(threshold = 0.1) {
-  const ref = useRef<HTMLDivElement>(null)
-  const [inView, setInView] = useState(false)
-  useEffect(() => {
-    const el = ref.current
-    if (!el) return
-    const obs = new IntersectionObserver(
-      ([e]) => { if (e.isIntersecting) { setInView(true); obs.disconnect() } },
-      { threshold }
-    )
-    obs.observe(el)
-    return () => obs.disconnect()
-  }, [threshold])
-  return { ref, inView }
-}
 
 /* ─── Counter ────────────────────────────────────────────────────────────── */
 function Counter({ to, prefix = '', suffix = '' }: { to: number; prefix?: string; suffix?: string }) {
@@ -48,7 +34,7 @@ const FEATURES = [
 ]
 
 const STEPS = [
-  { num: '01', title: 'Sign Up Free', desc: 'Create your account and complete your profile in just 2 minutes.' },
+{ num: '01', title: 'Sign Up Free', desc: 'Create your account and complete your profile in just 2 minutes.' },
   { num: '02', title: 'Browse & Enroll', desc: 'Choose from 150+ courses across technology, business, design, and more.' },
   { num: '03', title: 'Learn at Your Pace', desc: 'Complete lessons, take quizzes, and earn tokens as you progress.' },
   { num: '04', title: 'Get Certified', desc: 'Receive blockchain-verified credentials upon course completion.' },
@@ -56,11 +42,6 @@ const STEPS = [
   { num: '06', title: 'Land Opportunities', desc: 'Connect with employers seeking verified, skilled talent like you.' },
 ]
 
-const TESTIMONIALS = [
-  { name: 'Chioma Adeyemi', role: 'Learner · Lagos, Nigeria', avatar: 'CA', avatarBg: '#F97316', quote: "Learnault helped me upskill in digital marketing and earn money at the same time. I've already referred 5 friends!" },
-  { name: 'Miguel Santos', role: 'Learner · São Paulo, Brazil', avatar: 'MS', avatarBg: '#475569', quote: 'The blockchain module was incredibly comprehensive. Now I understand crypto better and have earned real rewards.' },
-  { name: 'Priya Sharma', role: 'Employer · Bangalore, India', avatar: 'PS', avatarBg: '#22C55E', quote: 'We found exceptional talent through Learnault. The learners are motivated, skilled, and ready to work.' },
-]
 
 /* ─── FeatureCard ────────────────────────────────────────────────────────── */
 interface FeatureCardProps { Icon: React.ElementType; title: string; desc: string; delay: number }
@@ -92,26 +73,7 @@ function StepCard({ num, title, desc, delay }: StepCardProps) {
   )
 }
 
-/* ─── TestimonialCard ────────────────────────────────────────────────────── */
-interface TCardProps { name: string; role: string; avatar: string; avatarBg: string; quote: string; delay: number }
-function TCard({ name, role, avatar, avatarBg, quote, delay }: TCardProps) {
-  const { ref, inView } = useInView()
-  return (
-    <div ref={ref} style={{ opacity: inView ? 1 : 0, transform: inView ? 'none' : 'translateY(20px)', transition: `opacity .5s ${delay}s, transform .5s ${delay}s`, background: '#fff', borderRadius: 12, padding: '28px 24px', border: '1px solid #E5E7EB' }}>
-      <div style={{ display: 'flex', gap: 3, marginBottom: 16 }}>
-        {'★★★★★'.split('').map((s, i) => <span key={i} style={{ color: '#0070B6', fontSize: 14 }}>{s}</span>)}
-      </div>
-      <p style={{ fontSize: 14, color: '#374151', lineHeight: 1.7, marginBottom: 20, fontWeight: 500 }}>&ldquo;{quote}&rdquo;</p>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-        <div style={{ width: 38, height: 38, borderRadius: '50%', background: avatarBg, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 12, fontWeight: 700, flexShrink: 0 }}>{avatar}</div>
-        <div>
-          <p style={{ fontSize: 13, fontWeight: 700, color: '#111827', margin: 0 }}>{name}</p>
-          <p style={{ fontSize: 11, color: '#9CA3AF', margin: 0 }}>{role}</p>
-        </div>
-      </div>
-    </div>
-  )
-}
+
 
 /* ─── Main Page ──────────────────────────────────────────────────────────── */
 export default function Home() {
@@ -308,17 +270,7 @@ export default function Home() {
       </section>
 
       {/* ── TESTIMONIALS ── */}
-      <section id="testimonials" style={{ background: '#F3F4F6', padding: '72px 24px' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: 56 }}>
-            <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 800, color: '#111827', marginBottom: 12, letterSpacing: '-0.5px' }}>Success Stories</h2>
-            <p style={{ fontSize: 16, color: '#6B7280', margin: 0 }}>Hear from learners and employers who&apos;ve transformed their lives with Learnault</p>
-          </div>
-          <div className="testimonials-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
-            {TESTIMONIALS.map((t, i) => <TCard key={t.name} {...t} delay={i * 0.1} />)}
-          </div>
-        </div>
-      </section>
+      <TestimonialSection />
 
       {/* ── CTA ── */}
       <section style={{ padding: '72px 24px' }}>

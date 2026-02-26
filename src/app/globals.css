@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  /* ─── Typography ─────────────────────────────────────────────────────────── */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* ─── Brand Colors ───────────────────────────────────────────────────────── */
+  --color-primary: #1a73e8;
+  --color-primary-dark: #1a3a6b;
+
+  /* ─── Neutral (from Figma) ───────────────────────────────────────────────── */
+  --color-white-solid: #ffffff;
+  --color-grey-98: #fafafa;
+  --color-background: #ffffff;   /* page background — white-solid */
+  --color-surface: #fafafa;      /* card/section background — grey-98 */
+  --color-foreground: #1a1a2e;
+  --color-muted: #6b7280;
+
+  /* ─── Azure (from Figma — footer, nav dark bg) ───────────────────────────── */
+  --color-azure-23: rgba(20, 60, 98, 1); /* #143c62 */
+  --color-footer-bg: rgba(20, 60, 98, 1);
+
+  /* ─── Accent ─────────────────────────────────────────────────────────────── */
+  --color-accent: #e8873a;
+  --color-accent-subtle: rgba(232, 135, 58, 0.1); /* tint bg — referral card, highlights */
+  --color-star: #f5a623;
+
+  /* ─── Border ─────────────────────────────────────────────────────────────── */
+  --color-border: #e5e7eb;
+
+  /* ─── Gradient ───────────────────────────────────────────────────────────── */
+  --gradient-cta: linear-gradient(to right, var(--color-primary-dark), var(--color-accent));
+}

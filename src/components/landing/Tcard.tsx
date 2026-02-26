@@ -14,7 +14,7 @@ interface TCardProps {
 export function TCard({ name, role, avatar, avatarBg, quote, delay }: TCardProps) {
     const { ref, inView } = useInView()
     return (
-        <div className="h-full" ref={ref} style={{ opacity: inView ? 1 : 0, transform: inView ? 'none' : 'translateY(20px)', transition: `opacity .5s ${delay}s, transform .5s ${delay}s`, background: '#fff', borderRadius: 12, padding: '28px 24px', border: '1px solid #E5E7EB' }}>
+        <div className="h-full" ref={ref} style={{ opacity: inView ? 1 : 0, transform: inView ? 'none' : 'translateY(20px)', transition: `opacity .5s ${delay}s, transform .4s ${delay}s`, background: '#fff', borderRadius: 12, padding: '28px 24px', border: '1px solid #E5E7EB' }}>
             <div style={{ display: 'flex', gap: 3, marginBottom: 16 }}>
                 {'★★★★★'.split('').map((s, i) => <span key={i} style={{ color: '#0070B6', fontSize: 14 }}>{s}</span>)}
             </div>

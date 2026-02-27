@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { ArrowRight, TrendingUp, Lock, Users, Zap, Globe, Menu, X } from 'lucide-react'
 import TestimonialSection from '@/components/landing/TestimonialSection'
 import { useInView } from '../../lib/hooks/use-in-view';
+import CTASection from '@/components/landing/cta'
 
 
 /* ─── Counter ────────────────────────────────────────────────────────────── */
@@ -273,29 +274,10 @@ export default function Home() {
       <TestimonialSection />
 
       {/* ── CTA ── */}
-      <section style={{ padding: '72px 24px' }}>
-        <div className="cta-box" style={{ maxWidth: 860, margin: '0 auto', background: 'linear-gradient(135deg, #0070B6 0%, #FC641E 100%)', borderRadius: 24, padding: '56px 48px', textAlign: 'center' }}>
-          <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.6rem)', fontWeight: 800, color: '#fff', marginBottom: 12, letterSpacing: '-0.5px' }}>Ready to Transform Your Future?</h2>
-          <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.85)', marginBottom: 36, lineHeight: 1.6 }}>Join thousands of learners earning real rewards while building skills that employers value.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 40 }}>
-            <button className="btn-cta-primary">Start Your Journey Now <ArrowRight size={16} /></button>
-            <button className="btn-cta-outline">Explore Courses</button>
-          </div>
-          <div className="cta-stats" style={{ borderTop: '1px solid rgba(255,255,255,0.2)', paddingTop: 32, display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 16 }}>
-            {[
-              { to: 50, prefix: '', suffix: 'K+', label: 'Active Learners' },
-              { to: 45, prefix: '', suffix: '+', label: 'Countries' },
-              { to: 2, prefix: '$', suffix: 'M+', label: 'Paid Out' },
-              { to: 4, prefix: '', suffix: '.8★', label: 'Avg Rating' },
-            ].map(({ to, prefix, suffix, label }) => (
-              <div key={label} style={{ textAlign: 'center' }}>
-                <p style={{ fontSize: 22, fontWeight: 800, color: '#fff', margin: 0 }}><Counter to={to} prefix={prefix} suffix={suffix} /></p>
-                <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.8)', marginTop: 4, marginBottom: 0 }}>{label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+      <section className='my-20'>
+        <CTASection />
       </section>
+      
 
       {/* ── FOOTER ──
       <footer style={{ borderTop: '1px solid #E5E7EB', background: '#fff', padding: '24px' }}>

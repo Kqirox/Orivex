@@ -31,3 +31,8 @@
   /* ─── Gradient ───────────────────────────────────────────────────────────── */
   --gradient-cta: linear-gradient(to right, var(--color-primary-dark), var(--color-accent));
 }
+
+
+.swiper{
+  display: grid !important;
+}

@@ -1,5 +1,5 @@
-import LandingPage from "./LandingPage";
+// import LandingPage from "./LandingPage";
 
-export default function App() {
-  return <LandingPage />;
-}
+// export default function App() {
+//   return <LandingPage />;
+// }

@@ -5,6 +5,7 @@ import { ArrowRight, TrendingUp, Lock, Users, Zap, Globe, Menu, X } from 'lucide
 import TestimonialSection from '@/components/landing/TestimonialSection'
 import { useInView } from '../../lib/hooks/use-in-view';
 import CTASection from '@/components/landing/cta'
+import { AuthDebug } from '@/components/AuthDebug'
 
 
 /* ─── Counter ────────────────────────────────────────────────────────────── */
@@ -95,7 +96,7 @@ export default function Home() {
   return (
     <>
       <style href="learnault-styles" precedence="default">{`
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; }
         html { scroll-behavior: smooth; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #F9FAFB; color: #111827; overflow-x: hidden; }
         @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
@@ -291,6 +292,7 @@ export default function Home() {
           <span style={{ fontSize: 12, color: '#D1D5DB' }}>© 2025 Learnault Inc.</span>
         </div>
       </footer> */}
+      <AuthDebug />
     </>
   )
 }

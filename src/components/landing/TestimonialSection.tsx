@@ -11,7 +11,7 @@ const TestimonialSlider = () => {
     return (
         <Swiper
             slidesPerView={1}
-            spaceBetween={20}
+            spaceBetween={40}
             loop={true}
             autoplay={{
                 delay: 1500,
@@ -38,10 +38,10 @@ export default function TestimonialSection() {
     return (
         <section
             id="testimonials"
-            style={{ background: "#F3F4F6", padding: "72px 24px" }}
+            style={{ background: "#F3F4F6", padding: "100px 24px !important" }}
         >
             <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-                <div style={{ textAlign: "center", marginBottom: 56 }}>
+                <div style={{ textAlign: "center", marginBottom: 72 }}>
                     <h2
                         style={{
                             fontSize: "clamp(1.8rem, 4vw, 2.8rem)",

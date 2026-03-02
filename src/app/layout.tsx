@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 
-import { AuthProvider } from "@/context/AuthContext";
+import { AuthProvider } from "@/contexts/auth-context";
 import "./globals.css";
 
 // ─── Fonts ────────────────────────────────────────────────────────────────────

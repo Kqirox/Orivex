@@ -7,7 +7,7 @@ export interface User {
   email: string;
   name: string;
   avatar?: string;
-  role?: "student" | "instructor" | "admin";
+  role: "student" | "instructor" | "admin";
 }
 
 export interface AuthContextType {
@@ -16,7 +16,9 @@ export interface AuthContextType {
   isLoading: boolean;
   error: string | null;
   login: (email: string, password: string) => Promise<void>;
+  signup: (name: string, email: string, password: string, role: User["role"]) => Promise<void>;
   logout: () => Promise<void>;
   checkAuth: () => Promise<void>;
   isProtectedRoute?: boolean;
 }
+

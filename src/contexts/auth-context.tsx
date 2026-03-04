@@ -6,98 +6,54 @@ import React, {
   useEffect,
   useState,
   ReactNode,
+  useCallback,
 } from "react";
 import type { User, AuthContextType } from "@/types/auth";
 
-/**
- * Auth Context - Provides authentication state and methods
- */
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-export interface AuthProviderProps {
-  children: ReactNode;
-}
-
-/**
- * Auth Provider Component
- * Manages authentication state and provides auth methods
- */
-export function AuthProvider({ children }: AuthProviderProps) {
+export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  /**
-   * Check authentication status on mount
-   */
-  useEffect(() => {
-    checkAuth();
-  }, []);
-
-  /**
-   * Verify if user is authenticated
-   * In a real app, this would check with your backend/auth service
-   */
-  const checkAuth = async () => {
+  const checkAuth = useCallback(async () => {
     try {
       setIsLoading(true);
       setError(null);
-
-      // Simulate checking auth token from localStorage or making API call
-      const token =
-        typeof window !== "undefined"
-          ? localStorage.getItem("auth_token")
-          : null;
-
-      if (token) {
-        // In a real app, verify token with backend
-        const userData =
-          typeof window !== "undefined"
-            ? JSON.parse(localStorage.getItem("user_data") || "null")
-            : null;
-
-        if (userData) {
-          setUser(userData);
-        }
+      const storedUser = localStorage.getItem("user_data");
+      if (storedUser) {
+        setUser(JSON.parse(storedUser));
       }
     } catch (err) {
-      const message =
-        err instanceof Error ? err.message : "Failed to check authentication";
-      setError(message);
-      setUser(null);
+      setError("Failed to restore session");
     } finally {
       setIsLoading(false);
     }
-  };
+  }, []);
 
-  /**
-   * Log in user with email and password
-   */
+  useEffect(() => {
+    checkAuth();
+  }, [checkAuth]);
+
   const login = async (email: string, password: string) => {
+    setIsLoading(true);
+    setError(null);
     try {
-      setIsLoading(true);
-      setError(null);
-
-      // In a real app, make API call to your auth service
-      if (!email || !password) {
-        throw new Error("Email and password are required");
-      }
-
-      // Mock user data - replace with actual API response
-      const mockUser: User = {
-        id: "1",
-        email,
-        name: email.split("@")[0],
-        role: "student",
-      };
-
-      // Store in localStorage (in real app, store auth token)
-      if (typeof window !== "undefined") {
-        localStorage.setItem("auth_token", "mock_token");
+      // Mock validation
+      if (email === "test@example.com" && password === "password123") {
+        const mockUser: User = {
+          id: "1",
+          email,
+          name: "Test User",
+          role: "student",
+        };
         localStorage.setItem("user_data", JSON.stringify(mockUser));
+        localStorage.setItem("auth_token", "mock_token_123");
+        setUser(mockUser);
+      } else {
+        throw new Error("Invalid credentials. Try test@example.com / password123");
       }
-
-      setUser(mockUser);
     } catch (err) {
       const message = err instanceof Error ? err.message : "Login failed";
       setError(message);
@@ -107,23 +63,22 @@ export function AuthProvider({ children }: AuthProviderProps) {
     }
   };
 
-  /**
-   * Log out user and clear authentication
-   */
-  const logout = async () => {
+  const signup = async (name: string, email: string, _password: string, role: User["role"]) => {
+    setIsLoading(true);
+    setError(null);
     try {
-      setIsLoading(true);
-      setError(null);
-
-      // Clear localStorage
-      if (typeof window !== "undefined") {
-        localStorage.removeItem("auth_token");
-        localStorage.removeItem("user_data");
-      }
-
-      setUser(null);
+      // Mock signup
+      const newUser: User = {
+        id: Math.random().toString(36).substr(2, 9),
+        email,
+        name,
+        role,
+      };
+      localStorage.setItem("user_data", JSON.stringify(newUser));
+      localStorage.setItem("auth_token", "mock_token_" + newUser.id);
+      setUser(newUser);
     } catch (err) {
-      const message = err instanceof Error ? err.message : "Logout failed";
+      const message = err instanceof Error ? err.message : "Signup failed";
       setError(message);
       throw err;
     } finally {
@@ -131,23 +86,37 @@ export function AuthProvider({ children }: AuthProviderProps) {
     }
   };
 
-  const value: AuthContextType = {
-    user,
-    isAuthenticated: !!user,
-    isLoading,
-    error,
-    login,
-    logout,
-    checkAuth,
+  const logout = async () => {
+    setIsLoading(true);
+    try {
+      localStorage.removeItem("user_data");
+      localStorage.removeItem("auth_token");
+      setUser(null);
+    } catch (err) {
+      setError("Logout failed");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+  return (
+    <AuthContext.Provider
+      value={{
+        user,
+        isAuthenticated: !!user,
+        isLoading,
+        error,
+        login,
+        signup,
+        logout,
+        checkAuth,
+      }}
+    >
+      {children}
+    </AuthContext.Provider>
+  );
 }
 
-/**
- * Hook to use auth context
- * @throws Error if used outside AuthProvider
- */
 export function useAuth() {
   const context = useContext(AuthContext);
   if (context === undefined) {
@@ -155,3 +124,4 @@ export function useAuth() {
   }
   return context;
 }
+

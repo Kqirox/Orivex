@@ -250,3 +250,56 @@ Web3-native
 The system reflects Learnault’s mission:
 
 **Learning that converts directly into measurable value.**
+
+
+
+# UI Component Implementation: Buttons & Inputs
+
+## Overview
+This issue covers the implementation of the core `Button`, `Input` (Email), and `Textarea` (Description) components based on the latest UI design specifications. Below are the required styles and states for each component.
+
+---
+
+## 1. Buttons
+We need to implement three main variants of buttons, each with their respective states (Default, Hover/Active, Disabled).
+
+### Solid Buttons
+* **Primary:** Solid mustard/yellow background, black text.
+* **Secondary:** Lighter yellow background, black text.
+* **Tertiary/Muted:** Beige/light tan background, dark text.
+* **Disabled:** Light grey background, grey text.
+
+### Outline Buttons
+* **Default:** White background, dark grey border, black text.
+* **Active/Filled:** Light grey background, dark grey border, black text.
+* **Disabled:** White background, very faint/light border, light grey text.
+
+### Text/Link Buttons
+* **Default:** Teal text with a right-pointing arrow icon (`→`).
+* **Muted/Disabled:** Faded teal text with a right-pointing arrow icon (`→`).
+
+---
+
+## 2. Input Fields (Email)
+The email input field requires validation states with icon feedback. All inputs have a top label with an envelope icon.
+
+* **Default:** Light grey border, placeholder text ("Enter email").
+* **Focus/Active:** Purple/indigo border, user text entered, green checkmark icon on the right.
+* **Success/Filled:** Light grey border, user text entered, green checkmark icon on the right.
+* **Error:** Red border, red user text. Includes a red error icon and message below the field ("Email is not valid"), alongside an info `(i)` icon on the far right.
+
+---
+
+## 3. Textarea Fields (Description)
+The description textarea requires validation states and a character count/limit indicator. All textareas have a top label with a pencil icon.
+
+* **Default:** Light grey border, placeholder text ("Write description here..."). Includes info text below: "Max 200 texts".
+* **Focus/Active:** Purple/indigo border, user text entered. Includes info text below: "Max 200 texts".
+* **Filled/Inactive:** Light grey border, user text entered (faded text). Includes info text below: "Max 200 texts".
+* **Error:** Red border, red user text. Includes a red error icon and message below the field ("Reached the 200 text limit").
+
+---
+
+## Assets & Notes
+* **Icons Needed:** Envelope (email), Pencil (edit), Checkmark (success), Error/Alert, Info, Right Arrow.
+* Please ensure proper padding, border-radius, and typography matching the Figma/design file.

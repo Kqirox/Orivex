@@ -1,101 +1,33 @@
-import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
-
-import { AuthProvider } from "@/contexts/auth-context";
+import type { Metadata } from "next";
+import { Geist_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-// ─── Fonts ────────────────────────────────────────────────────────────────────
-
-const inter = Inter({
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
-  variable: "--font-inter",
-  weight: ["400", "500", "600", "700", "800", "900"],
-  display: "swap",
 });
 
-// ─── Metadata ─────────────────────────────────────────────────────────────────
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: {
-    default: "Learnault — Learn & Earn on Stellar",
-    template: "%s | Learnault",
-  },
-  description:
-    "A decentralized learn-to-earn platform on Stellar blockchain. Complete educational modules, earn token rewards, and build verifiable credentials.",
-  keywords: [
-    "learn to earn",
-    "stellar blockchain",
-    "education",
-    "crypto rewards",
-    "verifiable credentials",
-    "soroban",
-    "defi education",
-  ],
-  authors: [{ name: "Learnault Contributors" }],
-  creator: "Learnault",
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_APP_URL ?? "https://learnault.app"
-  ),
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "/",
-    siteName: "Learnault",
-    title: "Learnault — Learn & Earn on Stellar",
-    description:
-      "Democratizing access to financial literacy and digital skills with blockchain-verified credentials.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Learnault — Learn & Earn on Stellar",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Learnault — Learn & Earn on Stellar",
-    description:
-      "Democratizing access to financial literacy and digital skills with blockchain-verified credentials.",
-    images: ["/og-image.png"],
-  },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
-  },
-  manifest: "/site.webmanifest",
+  title: "Quid",
+  description: "Launch Better Stellar Products with Real User Insight",
 };
-
-// ─── Viewport ─────────────────────────────────────────────────────────────────
-
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 5,
-  userScalable: true,
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#143c62" },
-  ],
-};
-
-// ─── Layout ───────────────────────────────────────────────────────────────────
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html
-      lang="en"
-      className={inter.variable}
-      suppressHydrationWarning
-    >
-      <body className="bg-surface text-foreground font-sans antialiased">
-        <AuthProvider>{children}</AuthProvider>
+    <html lang="en">
+      <body
+        className={`${spaceGrotesk.variable} ${geistMono.variable} font-sans antialiased`}
+      >
+          {children}
       </body>
     </html>
   );

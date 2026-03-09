@@ -1,5 +1,11 @@
 import Image from "next/image";
+import { Syne } from "next/font/google";
 import { heroBg, heroPeople, people } from "../../../public/assets";
+
+const syne = Syne({
+  subsets: ["latin"],
+  weight: ["700", "800"],
+});
 
 const Hero = () => {
   return (
@@ -14,7 +20,9 @@ const Hero = () => {
     >
       <div className="relative mx-auto grid w-full max-w-[1180px] items-center gap-8 px-4 py-8 sm:px-6 sm:py-10 lg:grid-cols-[minmax(0,520px)_minmax(0,524px)] lg:justify-center lg:gap-12 lg:px-10 lg:py-12">
         <div className="order-2 max-w-xl space-y-5 lg:order-1 lg:justify-self-center lg:space-y-7">
-          <h1 className="max-w-[400px] font-[var(--font-space-grotesk)] text-2xl leading-[1.02] font-bold text-[#1E1F24] sm:text-6xl">
+          <h1
+            className={`${syne.className} max-w-[450px] text-2xl leading-[1.02] font-bold text-[#1E1F24] sm:text-6xl`}
+          >
             Build Your Skills & Earn.
           </h1>
 
@@ -25,16 +33,16 @@ const Hero = () => {
             managers.
           </p>
 
-          <div className="grid grid-cols-2 items-center gap-3 sm:flex sm:flex-wrap sm:gap-4">
+          <div className="grid grid-cols-2 items-center gap-3 sm:flex sm:mt-14 sm:flex-wrap sm:gap-4">
             <button
               type="button"
-              className="rounded-full bg-[#F4B42A] px-4 py-3 text-sm font-semibold text-[#1A1A1A] transition hover:bg-[#e6a81f] sm:px-8"
+              className="rounded-full bg-[#F4B42A] px-4 py-3 text-sm font-bold text-[#1A1A1A] transition hover:bg-[#e6a81f] sm:px-8"
             >
               Start Learning
             </button>
             <button
               type="button"
-              className="rounded-full border border-[#D1D5DB] bg-[#F7F7F7] px-4 py-3 text-sm font-semibold text-[#272A30] transition hover:bg-white sm:px-8"
+              className="rounded-full border border-[#D1D5DB] bg-[#F7F7F7] px-4 py-3 text-sm font-bold text-[#272A30] transition hover:bg-white sm:px-8"
             >
               Explore Quests
             </button>

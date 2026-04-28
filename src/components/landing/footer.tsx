@@ -1,13 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Syne } from "next/font/google";
 
 
 
-const syne = Syne({
-  subsets: ["latin"],
-  weight: ["600", "700"],
-});
 
 const navLinks = {
   Platform: ["Learn", "Quests", "Treasury", "Network"],
@@ -52,7 +47,7 @@ const Footer = () => {
               <div className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#F4B42A]/25 bg-[#F4B42A]/10">
                 <Image src="/assets/Footer/Vector.png" alt="Learnault logo" width={24} height={24} />
               </div>
-              <span className={`${syne.className} text-[17px] font-bold text-[#F1F1F1]`}>
+              <span className= "text-[17px] font-bold text-[#F1F1F1]">
                 Learnault
               </span>
             </Link>
@@ -83,7 +78,7 @@ const Footer = () => {
           {Object.entries(navLinks).map(([section, items]) => (
             <div key={section}>
               <p
-                className={`${syne.className} mb-5 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#6B7280]`}
+                className="mb-5 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#6B7280]"
               >
                 {section}
               </p>

@@ -3,9 +3,10 @@ import Home from '@/app/page';
 import { describe, it, expect } from 'vitest';
 
 describe('Home Page', () => {
-    it('renders the text "Home"', () => {
+    it('renders the landing page correctly', () => {
         render(<Home />);
-        expect(screen.getByText('Home')).toBeInTheDocument();
+        expect(screen.getByText(/Build Your Skills & Earn/i)).toBeInTheDocument();
+        expect(screen.getByText(/Master Stellar/i)).toBeInTheDocument();
     });
 
     it('checks if environment variables are loaded', () => {

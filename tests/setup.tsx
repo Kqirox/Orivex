@@ -15,10 +15,8 @@ vi.mock('next/image', () => ({
     // eslint-disable-next-line @next/next/no-img-element
     return (
       <img
-        {...props}
+        src={props.src}
         alt={props.alt || ""}
-        fill={props.fill?.toString()}
-        priority={props.priority?.toString()}
       />
     );
   },

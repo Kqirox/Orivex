@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-// 1. Import the ChevronDown icon from Lucide
 import { ChevronDown } from "lucide-react";
 
 interface FAQItem {
@@ -10,29 +9,25 @@ interface FAQItem {
 
 const faqData: FAQItem[] = [
   {
-    question: "What is Learn_ault?",
+    question: "What is Learnault?",
     answer:
-      "Learn_ault is an innovative platform where you can learn new skills and earn rewards simultaneously. We combine education with incentives to keep you motivated on your learning journey.",
+      "Learnault is a decentralized learn-to-earn platform built on the Stellar blockchain. We help users learn digital skills, earn token rewards for their progress, and receive verifiable on-chain credentials.",
   },
   {
     question: "How do I earn rewards?",
-    answer:
-      "You earn rewards automatically by completing learning modules, passing quizzes, and actively participating in community challenges.",
+    answer: "You earn rewards automatically by completing learning modules, passing quizzes, and actively participating in community challenges.",
   },
   {
     question: "Are certificates recognized?",
-    answer:
-      "Yes, our certificates are partnered with industry leaders and can be verified seamlessly for absolute authenticity.",
+    answer: "Yes, our certificates are partnered with industry leaders and can be verified seamlessly for absolute authenticity.",
   },
   {
     question: "Is it free to use?",
-    answer:
-      "We offer a robust free tier to get you started, along with premium pathways for advanced certifications and higher earning potential.",
+    answer: "We offer a robust free tier to get you started, along with premium pathways for advanced certifications and higher earning potential.",
   },
   {
     question: "Do I need crypto knowledge?",
-    answer:
-      "Not at all! Our platform is designed to be incredibly user-friendly for beginners. Any technical aspects operate behind the scenes.",
+    answer: "Not at all! Our platform is designed to be incredibly user-friendly for beginners. Any technical aspects operate behind the scenes.",
   },
 ];
 
@@ -44,12 +39,13 @@ export const FAQ: React.FC = () => {
   };
 
   return (
-    <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white flex flex-col items-center">
-      <h2 className="text-3xl md:text-4xl font-sans font-extrabold text-gray-900 mb-10 text-center">
+    <section className="w-full py-20 px-4 bg-white flex flex-col items-center">
+      {/* Title with tighter tracking and specific Slate color to match Figma */}
+      <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mb-12 text-center tracking-tight">
         Frequently Asked Questions
       </h2>
 
-      <div className="w-full max-w-3xl flex flex-col space-y-4">
+      <div className="w-full max-w-3xl flex flex-col space-y-3">
         {faqData.map((item, index) => {
           const isOpen = openIndex === index;
           const panelId = `faq-panel-${index}`;
@@ -57,29 +53,28 @@ export const FAQ: React.FC = () => {
           return (
             <div
               key={index}
-              className={`border rounded-lg overflow-hidden transition-all ${
-                isOpen ? "border-gray-300 shadow-sm" : "border-gray-200"
+              className={`transition-all duration-300 border rounded-xl overflow-hidden ${
+                isOpen 
+                  ? "border-[#FDE047] bg-[#FEFCE8]/40" // Gold border and soft yellow tint for active state
+                  : "border-gray-100 bg-white" // Subtle border for inactive
               }`}
             >
               <button
                 onClick={() => toggleAccordion(index)}
-                className="w-full min-h-[44px] flex items-center justify-between p-4 sm:p-5 bg-white hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-900 transition-colors cursor-pointer group"
+                className="w-full flex items-center justify-between p-5 text-left focus:outline-none group"
                 aria-expanded={isOpen}
                 aria-controls={panelId}
               >
-                <span className="font-semibold text-left text-gray-800 text-base sm:text-lg">
+                <span className={`font-semibold text-lg ${isOpen ? "text-gray-900" : "text-gray-700"}`}>
                   {item.question}
                 </span>
 
                 <span
-                  className={`flex items-center justify-center w-8 h-8 rounded-full transition-transform duration-300 ease-in-out ${
-                    isOpen
-                      ? "rotate-180 text-gray-900 bg-gray-100"
-                      : "rotate-0 text-gray-500 group-hover:bg-gray-100"
+                  className={`transition-transform duration-300 ${
+                    isOpen ? "rotate-180 text-[#FDE047]" : "text-gray-400"
                   }`}
                 >
-                  {/* 2. Replaced the SVG with the Lucide Component */}
-                  <ChevronDown size={20} strokeWidth={2.5} />
+                  <ChevronDown size={20} strokeWidth={2} />
                 </span>
               </button>
 
@@ -87,13 +82,11 @@ export const FAQ: React.FC = () => {
                 id={panelId}
                 role="region"
                 className={`grid transition-all duration-300 ease-in-out ${
-                  isOpen
-                    ? "grid-rows-[1fr] opacity-100"
-                    : "grid-rows-[0fr] opacity-0"
+                  isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
                 }`}
               >
                 <div className="overflow-hidden">
-                  <div className="p-4 sm:p-5 text-gray-700 bg-gray-50 border-t border-gray-100 leading-relaxed text-sm sm:text-base">
+                  <div className="px-5 pb-6 text-gray-500 leading-relaxed text-base">
                     {item.answer}
                   </div>
                 </div>

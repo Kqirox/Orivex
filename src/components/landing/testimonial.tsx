@@ -70,7 +70,6 @@ const Testimonial = () => {
             >
               {/* Quote Icon + Text */}
               <div className="relative mb-10">
-
                 <p
                   className="text-base leading-relaxed font-body relative z-10 pr-8"
                   style={{ color: "#5F6368" }}
@@ -99,10 +98,7 @@ const Testimonial = () => {
                   >
                     {item.author}
                   </h4>
-                  <p
-                    className="text-sm font-body"
-                    style={{ color: "#5F6368" }}
-                  >
+                  <p className="text-sm font-body" style={{ color: "#5F6368" }}>
                     {item.role} &bull; {item.location}
                   </p>
                 </div>

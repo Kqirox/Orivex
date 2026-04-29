@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${syne.variable} ${inter.variable} font-body antialiased`}
       >
-          {children}
+        {children}
       </body>
     </html>
   );

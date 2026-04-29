@@ -11,7 +11,9 @@ Learn → Earn
 ## Symbol Meaning
 
 ### Quarter Coin
+
 The curved form represents ¼ of a coin, symbolizing:
+
 - Financial rewards
 - Incremental earnings
 - Progress through stages
@@ -19,7 +21,9 @@ The curved form represents ¼ of a coin, symbolizing:
 It reflects Learnault’s Learn-to-Earn model, where users earn as they complete learning milestones.
 
 ### Letter "L"
+
 The geometric structure forms the letter "L" for:
+
 - Learnault
 - Learning
 - Leverage
@@ -27,7 +31,9 @@ The geometric structure forms the letter "L" for:
 It represents structure, curriculum, and foundational growth.
 
 ### Square Block
+
 The small square at the base symbolizes:
+
 - A completed module
 - A building block of knowledge
 - A digital block (blockchain infrastructure)

@@ -1,6 +1,7 @@
 import Hero from "@/components/landing/hero";
 import WhyLearnault from "@/components/landing/why-learnault";
 import Testimonial from "@/components/landing/testimonial";
+import ValueProposition from "@/components/landing/value-preposition";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Hero />
       <WhyLearnault />
       <Testimonial />
+      <ValueProposition/>
     </main>
   );
 };

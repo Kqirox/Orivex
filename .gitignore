@@ -130,3 +130,6 @@ $RECYCLE.BIN/
 !.dockerignore
 !.helmignore
 template
+
+# Local Figma exports (assets copied to public/assets)
+Export/

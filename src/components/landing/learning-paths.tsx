@@ -1,17 +1,36 @@
 "use client";
 
+import type { StaticImageData } from "next/image";
 import Image from "next/image";
 import { useRef } from "react";
+import {
+  articleIcon,
+  chevronRightIcon,
+  clockIcon,
+  playIcon,
+  sproutIcon,
+} from "../../../public/assets";
 
-const learningPathIcons = {
-  clock: "/assets/learning-paths/clock.svg",
-  sprout: "/assets/learning-paths/sprout.svg",
-  play: "/assets/learning-paths/play.svg",
-  article: "/assets/learning-paths/article.svg",
-  chevronRight: "/assets/learning-paths/chevron-right.svg",
-} as const;
+const learningPathIcons: Record<
+  "clock" | "sprout" | "play" | "article" | "chevronRight",
+  StaticImageData
+> = {
+  clock: clockIcon,
+  sprout: sproutIcon,
+  play: playIcon,
+  article: articleIcon,
+  chevronRight: chevronRightIcon,
+};
 
 type PathIconName = keyof typeof learningPathIcons;
+
+const pathIconSizes: Record<PathIconName, { width: number; height: number }> = {
+  clock: { width: 20, height: 20 },
+  sprout: { width: 16, height: 16 },
+  play: { width: 16, height: 16 },
+  article: { width: 16, height: 16 },
+  chevronRight: { width: 20, height: 20 },
+};
 
 const PathIcon = ({
   name,
@@ -19,16 +38,20 @@ const PathIcon = ({
 }: {
   name: PathIconName;
   className?: string;
-}) => (
-  <Image
-    src={learningPathIcons[name]}
-    alt=""
-    width={16}
-    height={16}
-    className={className}
-    aria-hidden
-  />
-);
+}) => {
+  const size = pathIconSizes[name];
+
+  return (
+    <Image
+      src={learningPathIcons[name]}
+      alt=""
+      width={size.width}
+      height={size.height}
+      className={className}
+      aria-hidden
+    />
+  );
+};
 
 type TierStatus = "available" | "locked";
 
@@ -144,7 +167,7 @@ const LearningPaths = () => {
 
                 <div className="mt-3 flex flex-wrap items-center gap-4 text-sm text-[#696E78]">
                   <span className="inline-flex items-center gap-1.5">
-                    <PathIcon name="clock" className="h-4 w-4 shrink-0" />
+                    <PathIcon name="clock" className="h-5 w-5 shrink-0" />
                     {tier.duration}
                   </span>
                   <span className="inline-flex items-center gap-1.5">
@@ -199,14 +222,7 @@ const LearningPaths = () => {
             aria-label="View next learning tier"
             className="absolute top-1/2 right-0 z-10 hidden h-11 w-11 -translate-y-1/2 translate-x-1/2 items-center justify-center rounded-full border border-[#E5EAF0] bg-white text-[#272A30] shadow-[0_4px_14px_rgba(15,23,42,0.08)] transition hover:bg-[#F8F9FB] lg:flex"
           >
-            <Image
-              src={learningPathIcons.chevronRight}
-              alt=""
-              width={20}
-              height={20}
-              className="h-5 w-5"
-              aria-hidden
-            />
+            <PathIcon name="chevronRight" className="h-5 w-5" />
           </button>
         </div>
       </div>

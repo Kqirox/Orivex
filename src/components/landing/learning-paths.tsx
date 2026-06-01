@@ -1,19 +1,34 @@
 "use client";
 
+import Image from "next/image";
 import { useRef } from "react";
-import { Syne } from "next/font/google";
-import {
-  ChevronRight,
-  Clock,
-  FileText,
-  Play,
-  Sprout,
-} from "lucide-react";
 
-const syne = Syne({
-  subsets: ["latin"],
-  weight: ["700", "800"],
-});
+const learningPathIcons = {
+  clock: "/assets/learning-paths/clock.svg",
+  sprout: "/assets/learning-paths/sprout.svg",
+  play: "/assets/learning-paths/play.svg",
+  article: "/assets/learning-paths/article.svg",
+  chevronRight: "/assets/learning-paths/chevron-right.svg",
+} as const;
+
+type PathIconName = keyof typeof learningPathIcons;
+
+const PathIcon = ({
+  name,
+  className,
+}: {
+  name: PathIconName;
+  className?: string;
+}) => (
+  <Image
+    src={learningPathIcons[name]}
+    alt=""
+    width={16}
+    height={16}
+    className={className}
+    aria-hidden
+  />
+);
 
 type TierStatus = "available" | "locked";
 
@@ -92,9 +107,7 @@ const LearningPaths = () => {
       <div className="mx-auto max-w-[1180px]">
         <header className="max-w-2xl">
           <TierBadge label="Stellar Learning Path" />
-          <h2
-            className={`${syne.className} mt-5 text-[28px] leading-[1.12] font-bold text-[#080B13] sm:text-[42px] lg:text-[48px]`}
-          >
+          <h2 className="font-heading mt-5 text-[28px] leading-[1.12] font-bold text-[#080B13] sm:text-[42px] lg:text-[48px]">
             Master Stellar. Earn as you progress.
           </h2>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-[#506078] sm:text-lg">
@@ -114,7 +127,7 @@ const LearningPaths = () => {
                 key={tier.tier}
                 className={`flex min-w-[min(100%,300px)] shrink-0 snap-start flex-col px-5 py-2 sm:min-w-[320px] sm:px-6 lg:min-w-0 lg:flex-1 lg:px-8 ${
                   index > 0
-                    ? "border-[#E5EAF0] max-lg:mt-8 max-lg:border-t max-lg:pt-8 lg:border-l lg:border-t-0 lg:pt-2 lg:mt-0"
+                    ? "border-[#E5EAF0] max-lg:mt-8 max-lg:border-t max-lg:pt-8 lg:mt-0 lg:border-l lg:border-t-0 lg:pt-2"
                     : ""
                 }`}
               >
@@ -131,19 +144,11 @@ const LearningPaths = () => {
 
                 <div className="mt-3 flex flex-wrap items-center gap-4 text-sm text-[#696E78]">
                   <span className="inline-flex items-center gap-1.5">
-                    <Clock
-                      className="h-4 w-4 text-[#94A3B8]"
-                      strokeWidth={2}
-                      aria-hidden
-                    />
+                    <PathIcon name="clock" className="h-4 w-4 shrink-0" />
                     {tier.duration}
                   </span>
                   <span className="inline-flex items-center gap-1.5">
-                    <Sprout
-                      className="h-4 w-4 text-[#16A34A]"
-                      strokeWidth={2}
-                      aria-hidden
-                    />
+                    <PathIcon name="sprout" className="h-4 w-4 shrink-0" />
                     {tier.level}
                   </span>
                 </div>
@@ -155,19 +160,11 @@ const LearningPaths = () => {
                 <div className="mt-5 rounded-xl bg-[#F8F9FB] px-4 py-3.5">
                   <ul className="space-y-2.5 text-sm text-[#506078]">
                     <li className="flex items-center gap-2">
-                      <Play
-                        className="h-4 w-4 shrink-0 text-[#94A3B8]"
-                        strokeWidth={2}
-                        aria-hidden
-                      />
+                      <PathIcon name="play" className="h-4 w-4 shrink-0" />
                       {tier.videos} Video lessons
                     </li>
                     <li className="flex items-center gap-2">
-                      <FileText
-                        className="h-4 w-4 shrink-0 text-[#94A3B8]"
-                        strokeWidth={2}
-                        aria-hidden
-                      />
+                      <PathIcon name="article" className="h-4 w-4 shrink-0" />
                       {tier.articles} Articles
                     </li>
                   </ul>
@@ -202,7 +199,14 @@ const LearningPaths = () => {
             aria-label="View next learning tier"
             className="absolute top-1/2 right-0 z-10 hidden h-11 w-11 -translate-y-1/2 translate-x-1/2 items-center justify-center rounded-full border border-[#E5EAF0] bg-white text-[#272A30] shadow-[0_4px_14px_rgba(15,23,42,0.08)] transition hover:bg-[#F8F9FB] lg:flex"
           >
-            <ChevronRight className="h-5 w-5" strokeWidth={2.5} />
+            <Image
+              src={learningPathIcons.chevronRight}
+              alt=""
+              width={20}
+              height={20}
+              className="h-5 w-5"
+              aria-hidden
+            />
           </button>
         </div>
       </div>

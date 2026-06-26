@@ -59,24 +59,24 @@ export const FAQ: React.FC = () => {
                   : "border-gray-100 bg-white" // Subtle border for inactive
               }`}
             >
-              <button
-                onClick={() => toggleAccordion(index)}
-                className="w-full flex items-center justify-between p-5 text-left focus:outline-none group"
-                aria-expanded={isOpen}
-                aria-controls={panelId}
-              >
-                <span className={`font-semibold text-lg ${isOpen ? "text-gray-900" : "text-gray-700"}`}>
-                  {item.question}
-                </span>
-
-                <span
-                  className={`transition-transform duration-300 ${
-                    isOpen ? "rotate-180 text-[#FDE047]" : "text-gray-400"
-                  }`}
+                <button
+                  onClick={() => toggleAccordion(index)}
+                  className="w-full flex items-center justify-between p-5 text-left group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F5B841]"
+                  aria-expanded={isOpen}
+                  aria-controls={panelId}
                 >
-                  <ChevronDown size={20} strokeWidth={2} />
-                </span>
-              </button>
+                  <span className={`font-semibold text-lg ${isOpen ? "text-gray-900" : "text-gray-700"}`}>
+                    {item.question}
+                  </span>
+
+                  <span
+                    className={`transition-transform duration-300 ${
+                      isOpen ? "rotate-180 text-[#FDE047]" : "text-gray-400"
+                    }`}
+                  >
+                    <ChevronDown size={20} strokeWidth={2} aria-hidden="true" />
+                  </span>
+                </button>
 
               <div
                 id={panelId}

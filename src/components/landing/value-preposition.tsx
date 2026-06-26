@@ -79,7 +79,7 @@ const ValueProposition = () => {
 
         <button
           type="button"
-          className="rounded-full bg-white px-6 py-3 text-sm font-bold text-[#0F172A] transition hover:bg-transparent sm:px-10 md:mt-8 mt-2  border border-transparent cursor-pointer hover:border-white"
+          className="rounded-full bg-white px-6 py-3 text-sm font-bold text-[#0F172A] transition hover:bg-transparent sm:px-10 md:mt-8 mt-2 border border-transparent cursor-pointer hover:border-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
         >
           Start Learning
         </button>

@@ -48,7 +48,7 @@ const PathIcon = ({
       width={size.width}
       height={size.height}
       className={className}
-      aria-hidden
+      aria-hidden="true"
     />
   );
 };
@@ -113,7 +113,7 @@ const tiers: LearningTier[] = [
 ];
 
 const TierBadge = ({ label }: { label: string }) => (
-  <span className="inline-flex rounded-full border border-[#F4B42A] bg-[#FFF8E8] px-3 py-1 text-xs font-semibold text-[#C98A00]">
+  <span className="inline-flex rounded-full border border-[#F4B42A] bg-[#FFF8E8] px-3 py-1 text-xs font-semibold text-[#7A5300]">
     {label}
   </span>
 );
@@ -203,10 +203,11 @@ const LearningPaths = () => {
                   <button
                     type="button"
                     disabled={tier.status === "locked"}
-                    className={`w-full rounded-full px-4 py-3 text-sm font-bold transition sm:py-3.5 ${
+                    aria-disabled={tier.status === "locked"}
+                    className={`w-full rounded-full px-4 py-3 text-sm font-bold transition sm:py-3.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F4B42A] ${
                       tier.status === "available"
                         ? "bg-[#F4B42A] text-[#1A1A1A] hover:bg-[#e6a81f]"
-                        : "cursor-not-allowed bg-[#F1F5F9] text-[#64748B]"
+                        : "cursor-not-allowed bg-[#E2E8F0] text-[#475569]"
                     }`}
                   >
                     {tier.ctaLabel}
@@ -220,7 +221,7 @@ const LearningPaths = () => {
             type="button"
             onClick={scrollNext}
             aria-label="View next learning tier"
-            className="absolute top-1/2 right-0 z-10 hidden h-11 w-11 -translate-y-1/2 translate-x-1/2 items-center justify-center rounded-full border border-[#E5EAF0] bg-white text-[#272A30] shadow-[0_4px_14px_rgba(15,23,42,0.08)] transition hover:bg-[#F8F9FB] lg:flex"
+            className="absolute top-1/2 right-0 z-10 hidden h-11 w-11 -translate-y-1/2 translate-x-1/2 items-center justify-center rounded-full border border-[#E5EAF0] bg-white text-[#272A30] shadow-[0_4px_14px_rgba(15,23,42,0.08)] transition hover:bg-[#F8F9FB] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F4B42A] lg:flex"
           >
             <PathIcon name="chevronRight" className="h-5 w-5" />
           </button>

@@ -52,7 +52,7 @@ const Footer = () => {
               </span>
             </Link>
 
-            <p className="mb-7 max-w-[220px] text-sm leading-7 text-[#6B7280]">
+            <p className="mb-7 max-w-[220px] text-sm leading-7 text-[#9CA3AF]">
               Decentralized learn-to-earn platform on Stellar. Build skills, earn
               rewards, and prove your knowledge.
             </p>
@@ -66,7 +66,7 @@ const Footer = () => {
                   aria-label={label}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/[0.06] bg-[#111318] text-[#6B7280] transition hover:-translate-y-0.5 hover:border-[#F4B42A]/30 hover:bg-[#F4B42A]/10 hover:text-[#F4B42A]"
+                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/[0.06] bg-[#111318] text-[#9CA3AF] transition hover:-translate-y-0.5 hover:border-[#F4B42A]/30 hover:bg-[#F4B42A]/10 hover:text-[#F4B42A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F4B42A]"
                 >
                   <Image src={icon} alt={label} width={16} height={16} />
                 </Link>
@@ -78,7 +78,7 @@ const Footer = () => {
           {Object.entries(navLinks).map(([section, items]) => (
             <div key={section}>
               <p
-                className="mb-5 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#6B7280]"
+                className="mb-5 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#9CA3AF]"
               >
                 {section}
               </p>
@@ -101,14 +101,14 @@ const Footer = () => {
 
         {/* Bottom bar */}
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/[0.06] pt-7 sm:flex-row">
-          <p className="text-xs font-light text-[#6B7280]">
+          <p className="text-xs font-light text-[#9CA3AF]">
             © {year} Learnault. All rights reserved.
           </p>
-          <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#F4B42A] opacity-50" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[#F4B42A]" />
-            </span>
+          <div className="flex items-center gap-2 text-xs text-[#9CA3AF]">
+              <span className="relative flex h-1.5 w-1.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#F4B42A] opacity-50 motion-reduce:animate-none" />
+                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[#F4B42A]" />
+              </span>
             Built on Stellar Network
           </div>
         </div>

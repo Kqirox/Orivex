@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { Quote, User } from "lucide-react";
 
 const testimonials = [
@@ -29,25 +29,27 @@ const testimonials = [
 ];
 
 const Testimonial = () => {
+  const shouldReduceMotion = useReducedMotion();
   return (
     <section className="py-24" style={{ backgroundColor: "#F9FAFB" }}>
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header */}
         <div className="text-center mb-20">
           <motion.h2
-            initial={{ opacity: 0, y: 20 }}
+            initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={shouldReduceMotion ? { duration: 0 } : undefined}
             className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6"
             style={{ color: "#0F172A" }}
           >
             What Our Learners Say
           </motion.h2>
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
+            transition={shouldReduceMotion ? { duration: 0 } : { delay: 0.1 }}
             className="text-lg md:text-xl max-w-xl mx-auto font-body"
             style={{ color: "#5F6368" }}
           >
@@ -61,10 +63,10 @@ const Testimonial = () => {
           {testimonials.map((item, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
+              initial={shouldReduceMotion ? false : { opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              transition={shouldReduceMotion ? { duration: 0 } : { delay: index * 0.1 }}
               className="bg-white rounded-2xl flex flex-col justify-between p-10"
               style={{ border: "1px solid #E2E8F0" }}
             >

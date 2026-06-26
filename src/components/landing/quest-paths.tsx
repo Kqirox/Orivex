@@ -96,7 +96,7 @@ const QuestPaths = () => {
 
             <button
               type="button"
-              className="rounded-[24px] bg-white px-8 py-3 text-base font-semibold text-[#1A1A1A] transition-shadow hover:shadow-lg"
+              className="rounded-[24px] bg-white px-8 py-3 text-base font-semibold text-[#1A1A1A] transition-shadow hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               style={{ fontFamily: poppins.style.fontFamily, fontWeight: 600 }}
             >
               Start Learning
@@ -108,6 +108,7 @@ const QuestPaths = () => {
             <div
               className="quest-swoosh relative h-[420px] w-[420px] sm:h-[480px] sm:w-[480px]"
               style={{ animation: "floatY 3s ease-in-out infinite" }}
+              className="motion-reduce:animate-none"
             >
               {/* Stellar logo — white, fills the container */}
               <Image
@@ -154,6 +155,12 @@ const QuestPaths = () => {
           }
           50% {
             transform: translateY(-8px);
+          }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          div[style*="animation"] {
+            animation: none !important;
           }
         }
       `}</style>

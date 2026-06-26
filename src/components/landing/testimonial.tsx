@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion, useReducedMotion } from "framer-motion";
-import { Quote, User } from "lucide-react";
+import { User } from "lucide-react";
 
 const testimonials = [
   {

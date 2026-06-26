@@ -9,9 +9,9 @@ describe("Screen-Reader Labels — Home Page", () => {
     render(<Home />);
     const svgs = document.querySelectorAll("svg");
     svgs.forEach((svg) => {
-      const isDecorative =
-        svg.getAttribute("aria-hidden") === "true" ||
-        svg.getAttribute("aria-hidden") === "true";
+      if (svg.hasAttribute("aria-hidden")) {
+        expect(svg.getAttribute("aria-hidden")).toBe("true");
+      }
     });
   });
 

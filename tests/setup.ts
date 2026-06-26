@@ -4,6 +4,7 @@ import React from 'react'
 
 if (typeof globalThis.IntersectionObserver === 'undefined') {
   globalThis.IntersectionObserver = class MockIntersectionObserver {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     constructor(callback: IntersectionObserverCallback, options?: IntersectionObserverInit) {}
     observe() {}
     unobserve() {}
@@ -32,7 +33,7 @@ vi.mock('next/font/google', () => {
 vi.mock('next/image', () => ({
   __esModule: true,
   default: vi.fn((props) => {
-    const { src, alt, priority, jsx, fill, ...rest } = props
+    const { src, alt, fill, ...rest } = props
     if (fill) {
       rest.width = '100%'
       rest.height = '100%'

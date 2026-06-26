@@ -24,7 +24,7 @@ describe("Responsive Verification — Home Page", () => {
   for (const bp of breakpoints) {
     it(`renders without overflow/CLS at ${bp.label}`, () => {
       setViewport(bp.width);
-      const { container } = render(<Home />);
+      render(<Home />);
 
       const scrollWidth = document.documentElement.scrollWidth;
       const viewportWidth = bp.width;
@@ -41,7 +41,7 @@ describe("Responsive Verification — Quiz Page", () => {
   for (const bp of breakpoints) {
     it(`renders quiz without overflow at ${bp.label}`, () => {
       setViewport(bp.width);
-      const { container } = render(<QuizContainer />);
+      render(<QuizContainer />);
 
       const scrollWidth = document.documentElement.scrollWidth;
       const viewportWidth = bp.width;

@@ -106,9 +106,8 @@ const QuestPaths = () => {
           {/* Right column — Stellar graphic */}
           <div className="relative flex w-full items-center justify-center lg:w-1/2">
             <div
-              className="quest-swoosh relative h-[420px] w-[420px] sm:h-[480px] sm:w-[480px]"
+              className="quest-swoosh relative h-[420px] w-[420px] motion-reduce:animate-none sm:h-[480px] sm:w-[480px]"
               style={{ animation: "floatY 3s ease-in-out infinite" }}
-              className="motion-reduce:animate-none"
             >
               {/* Stellar logo — white, fills the container */}
               <Image

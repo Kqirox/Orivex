@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { CheckCircle, XCircle, ArrowRight, RotateCcw, Award } from "lucide-react";
+import { RewardCelebrationModal } from "@/components/reward/RewardCelebrationModal";
 
 interface QuizQuestion {
   question: string;
@@ -90,6 +91,7 @@ function QuizResults({
   questions: QuizQuestion[];
   onRestart: () => void;
 }) {
+  const [isRewardOpen, setIsRewardOpen] = useState(true);
   const percentage = Math.round((score / total) * 100);
 
   return (
@@ -98,6 +100,13 @@ function QuizResults({
       animate={{ opacity: 1, y: 0 }}
       className="mx-auto max-w-2xl px-4 py-12"
     >
+      {isRewardOpen && (
+        <RewardCelebrationModal
+          amount="+$0.25 USDC"
+          badgeLabel="Stellar Scholar"
+          onClose={() => setIsRewardOpen(false)}
+        />
+      )}
       <div className="mb-8 text-center">
         <div className="mb-4 flex justify-center">
           <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">

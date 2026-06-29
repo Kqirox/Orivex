@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Syne } from "next/font/google";
 import { heroBg, heroPeople, people } from "../../../public/assets";
+import { Button } from "@/components/ui/Button";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -34,18 +35,12 @@ const Hero = () => {
           </p>
 
           <div className="grid grid-cols-2 items-center gap-3 sm:flex sm:mt-14 sm:flex-wrap sm:gap-4">
-            <button
-              type="button"
-              className="rounded-full bg-[#F4B42A] px-4 py-3 text-sm font-bold text-[#1A1A1A] transition hover:bg-[#e6a81f] sm:px-8"
-            >
+            <Button variant="primary" className="w-full sm:w-auto">
               Start Learning
-            </button>
-            <button
-              type="button"
-              className="rounded-full border border-[#D1D5DB] bg-[#F7F7F7] px-4 py-3 text-sm font-bold text-[#272A30] transition hover:bg-white sm:px-8"
-            >
+            </Button>
+            <Button variant="outline" className="w-full sm:w-auto">
               Explore Quests
-            </button>
+            </Button>
           </div>
 
           <div className="flex items-center justify-center gap-3 sm:justify-start">

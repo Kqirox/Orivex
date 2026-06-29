@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { CheckCircle, XCircle, ArrowRight, RotateCcw, Award } from "lucide-react";
 import { RewardCelebrationModal } from "@/components/reward/RewardCelebrationModal";
 
@@ -93,11 +93,13 @@ function QuizResults({
 }) {
   const [isRewardOpen, setIsRewardOpen] = useState(true);
   const percentage = Math.round((score / total) * 100);
+  const shouldReduceMotion = useReducedMotion();
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
+      transition={shouldReduceMotion ? { duration: 0 } : undefined}
       className="mx-auto max-w-2xl px-4 py-12"
     >
       {isRewardOpen && (
@@ -108,11 +110,11 @@ function QuizResults({
         />
       )}
       <div className="mb-8 text-center">
-        <div className="mb-4 flex justify-center">
-          <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-            <Award className="h-10 w-10 text-primary" />
+          <div className="mb-4 flex justify-center">
+            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
+              <Award className="h-10 w-10 text-primary" aria-hidden="true" />
+            </div>
           </div>
-        </div>
         <h1 className="mb-2 text-2xl font-bold font-heading text-foreground">
           Quiz Complete!
         </h1>
@@ -160,9 +162,9 @@ function QuizResults({
             >
               <div className="flex items-start gap-3">
                 {wasCorrect ? (
-                  <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-green-600" />
+                  <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-green-700" aria-hidden="true" />
                 ) : (
-                  <XCircle className="mt-0.5 h-5 w-5 shrink-0 text-red-600" />
+                  <XCircle className="mt-0.5 h-5 w-5 shrink-0 text-red-600" aria-hidden="true" />
                 )}
                 <div>
                   <p className="text-sm font-medium text-foreground">
@@ -173,7 +175,7 @@ function QuizResults({
                       Your answer:{" "}
                       <span className="text-red-600">{q.options[answers[i]]}</span>
                       {" — "}Correct:{" "}
-                      <span className="text-green-600">
+                      <span className="text-green-700">
                         {q.options[q.correctIndex]}
                       </span>
                     </p>
@@ -187,9 +189,9 @@ function QuizResults({
 
       <button
         onClick={onRestart}
-        className="flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-[#1A1A1A] transition-opacity hover:opacity-90"
+        className="flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-[#1A1A1A] transition-opacity hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F5B841]"
       >
-        <RotateCcw className="h-4 w-4" />
+        <RotateCcw className="h-4 w-4" aria-hidden="true" />
         Retake Quiz
       </button>
     </motion.div>
@@ -202,6 +204,7 @@ export function QuizContainer() {
   const [showFeedback, setShowFeedback] = useState(false);
   const [answers, setAnswers] = useState<number[]>([]);
   const [isComplete, setIsComplete] = useState(false);
+  const shouldReduceMotion = useReducedMotion();
 
   const question = MOCK_QUESTIONS[currentIndex];
   const totalQuestions = MOCK_QUESTIONS.length;
@@ -253,10 +256,10 @@ export function QuizContainer() {
 
       <motion.div
         key={currentIndex}
-        initial={{ opacity: 0, x: 24 }}
+        initial={shouldReduceMotion ? false : { opacity: 0, x: 24 }}
         animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -24 }}
-        transition={{ duration: 0.3, ease: "easeOut" }}
+        exit={shouldReduceMotion ? undefined : { opacity: 0, x: -24 }}
+        transition={shouldReduceMotion ? { duration: 0 } : { duration: 0.3, ease: "easeOut" }}
         className="mb-6 rounded-xl border bg-card p-6 shadow-sm"
       >
         <h2 className="mb-6 text-xl font-bold text-foreground font-heading">
@@ -289,7 +292,7 @@ export function QuizContainer() {
                 key={idx}
                 onClick={() => handleSelect(idx)}
                 disabled={showFeedback}
-                className={`flex w-full items-center gap-3 rounded-lg border-2 p-4 text-left text-sm font-medium transition-all ${containerClass}`}
+                className={`flex w-full items-center gap-3 rounded-lg border-2 p-4 text-left text-sm font-medium transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F5B841] ${containerClass}`}
               >
                 <span
                   className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border text-xs font-semibold transition-colors ${letterClass}`}
@@ -298,10 +301,10 @@ export function QuizContainer() {
                 </span>
                 <span className="flex-1 text-foreground">{option}</span>
                 {showFeedback && isCorrectOption && (
-                  <CheckCircle className="h-5 w-5 shrink-0 text-green-600" />
+                  <CheckCircle className="h-5 w-5 shrink-0 text-green-700" aria-hidden="true" />
                 )}
                 {showFeedback && isSelected && !isCorrectOption && (
-                  <XCircle className="h-5 w-5 shrink-0 text-red-600" />
+                  <XCircle className="h-5 w-5 shrink-0 text-red-600" aria-hidden="true" />
                 )}
               </button>
             );
@@ -311,9 +314,9 @@ export function QuizContainer() {
 
       {showFeedback && (
         <motion.div
-          initial={{ opacity: 0, y: 12 }}
+          initial={shouldReduceMotion ? false : { opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.25 }}
+          transition={shouldReduceMotion ? { duration: 0 } : { duration: 0.25 }}
         >
           <div
             className={`mb-4 rounded-lg border p-4 ${
@@ -324,9 +327,9 @@ export function QuizContainer() {
           >
             <div className="flex items-center gap-2 font-semibold">
               {isCorrect ? (
-                <CheckCircle className="h-5 w-5" />
+                <CheckCircle className="h-5 w-5" aria-hidden="true" />
               ) : (
-                <XCircle className="h-5 w-5" />
+                <XCircle className="h-5 w-5" aria-hidden="true" />
               )}
               {isCorrect ? "Correct!" : "Incorrect"}
             </div>
@@ -340,11 +343,11 @@ export function QuizContainer() {
 
           <button
             onClick={handleNext}
-            className="flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-[#1A1A1A] transition-opacity hover:opacity-90"
+            className="flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-[#1A1A1A] transition-opacity hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F5B841]"
           >
             {currentIndex < totalQuestions - 1 ? (
               <>
-                Next Question <ArrowRight className="h-4 w-4" />
+                Next Question <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </>
             ) : (
               "View Results"

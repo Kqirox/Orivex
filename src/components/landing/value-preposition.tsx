@@ -1,23 +1,24 @@
-import { Syne } from "next/font/google";
+import { Syne } from 'next/font/google';
+import { Button } from '@/components/ui/Button';
 
 const syne = Syne({
-  subsets: ["latin"],
-  weight: ["700", "800"],
+  subsets: ['latin'],
+  weight: ['700', '800'],
 });
 
 const ValueProposition = () => {
   return (
     <section
-      className="relative flex min-h-125 items-center justify-center overflow-hidden py-16 sm:min-h-150 sm:py-24 before:absolute before:inset-0 before:bg-black before:opacity-50 before:z-0"
+      className="relative flex items-center justify-center py-16 overflow-hidden min-h-125 sm:min-h-150 sm:py-24 before:absolute before:inset-0 before:bg-black before:opacity-50 before:z-0"
       style={{
         backgroundImage: ` url("/assets/hero-preposition.jpg")`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}
     >
       <svg
-        className="absolute top-0 right-0 h-full w-auto opacity-30"
+        className="absolute top-0 right-0 w-auto h-full opacity-30"
         viewBox="0 0 558 625"
         preserveAspectRatio="xMaxYMin meet"
         fill="none"
@@ -57,13 +58,17 @@ const ValueProposition = () => {
         <circle cx="1050" cy="420" r="3" fill="white" />
       </svg>
 
-      <div className="relative z-10 mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-10">
-        <div className="mb-9 text-white md:max-w-125">
-          <h2 className={`${syne.className} text-3xl font-bold sm:text-5xl lg:text-6xl`}>
+      <div className="relative z-10 max-w-3xl px-4 mx-auto text-center sm:px-6 lg:px-10">
+        <div className="text-white mb-9 md:max-w-125">
+          <h2
+            className={`${syne.className} text-3xl font-bold sm:text-5xl lg:text-6xl`}
+          >
             Start Learning.
           </h2>
 
-          <h2 className={`${syne.className} pb-4 pt-3 text-3xl font-bold sm:text-5xl lg:text-6xl`}>
+          <h2
+            className={`${syne.className} pb-4 pt-3 text-3xl font-bold sm:text-5xl lg:text-6xl`}
+          >
             Start Earning.
           </h2>
 
@@ -73,16 +78,15 @@ const ValueProposition = () => {
           </p>
         </div>
 
-        <button
+        <Button
           type="button"
-          className="mt-2 rounded-full border border-transparent bg-surface px-6 py-3 text-sm font-bold text-text-primary transition hover:bg-transparent sm:px-10 md:mt-8 hover:border-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          className="px-6 py-3 mt-2 text-sm font-bold transition border border-transparent rounded-full bg-surface text-text-primary hover:bg-transparent sm:px-10 md:mt-8 hover:border-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
         >
           Start Learning
-        </button>
+        </Button>
       </div>
     </section>
   );
 };
 
 export default ValueProposition;
-

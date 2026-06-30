@@ -62,7 +62,7 @@ export function Textarea({
   const textClass = isError
     ? "text-[#DC2626]"
     : isFilled
-    ? "text-[#94A3B8]"
+    ? "text-[#6B7280]"
     : "text-[#0F172A]";
 
   function handleChange(e: React.ChangeEvent<HTMLTextAreaElement>) {

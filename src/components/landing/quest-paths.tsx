@@ -32,18 +32,21 @@ const DOTS = Array.from({ length: 50 }, (_, i) => ({
 // label: optional prefix text in dark, amount in green
 // positions tuned to match the Stellar logo arcs
 const rewardLabels = [
-  { id: 1, prefix: "",               amount: "+75 XLM",  left: "28%", top: "14%" },
-  { id: 2, prefix: "Quest",          amount: "+95 XLM",  left: "68%", top: "34%" },
-  { id: 3, prefix: "Tier Completed", amount: "+60 XLM",  left: "18%", top: "54%" },
-  { id: 4, prefix: "",               amount: "+680 XLM", left: "62%", top: "72%" },
+  { id: 1, prefix: "", amount: "+75 XLM", left: "28%", top: "14%" },
+  { id: 2, prefix: "Quest", amount: "+95 XLM", left: "68%", top: "34%" },
+  {
+    id: 3,
+    prefix: "Tier Completed",
+    amount: "+60 XLM",
+    left: "18%",
+    top: "54%",
+  },
+  { id: 4, prefix: "", amount: "+680 XLM", left: "62%", top: "72%" },
 ];
 
 const QuestPaths = () => {
   return (
-    <section
-      className="relative flex min-h-screen items-center overflow-hidden"
-      style={{ backgroundColor: "#F5C563" }}
-    >
+    <section className="relative flex min-h-screen items-center overflow-hidden bg-primary/50">
       {/* Background dots */}
       <svg
         className="pointer-events-none absolute inset-0 h-full w-full"
@@ -66,10 +69,7 @@ const QuestPaths = () => {
         className="absolute left-6 top-6 z-10 sm:left-10 sm:top-10"
         style={{ fontFamily: poppins.style.fontFamily }}
       >
-        <span
-          className="inline-block rounded-[20px] border border-white bg-white px-4 py-2 text-[13px] font-semibold text-[#1A1A1A]"
-          style={{ fontWeight: 600 }}
-        >
+        <span className="inline-block rounded-[20px] border border-white bg-surface px-4 py-2 text-[13px] font-semibold text-text-primary">
           Earn Quest
         </span>
       </div>
@@ -80,13 +80,13 @@ const QuestPaths = () => {
           {/* Left column */}
           <div className="w-full space-y-6 lg:w-1/2">
             <h1
-              className={`${bricolage.className} max-w-[500px] text-[32px] leading-[1.2] font-bold tracking-[-0.5px] text-[#1A1A1A] sm:text-[40px] lg:text-[52px]`}
+              className={`${bricolage.className} max-w-[500px] text-[32px] leading-[1.2] font-bold tracking-[-0.5px] text-text-primary sm:text-[40px] lg:text-[52px]`}
             >
               Complete your tier, Unlock quest and Earn more.
             </h1>
 
             <p
-              className="max-w-[450px] text-base leading-[1.6] text-[#4A4A4A]"
+              className="max-w-[450px] text-base leading-[1.6] text-text-secondary"
               style={{ fontFamily: poppins.style.fontFamily, fontWeight: 400 }}
             >
               A structured, tier-based course designed to take you from beginner
@@ -96,7 +96,7 @@ const QuestPaths = () => {
 
             <button
               type="button"
-              className="rounded-[24px] bg-white px-8 py-3 text-base font-semibold text-[#1A1A1A] transition-shadow hover:shadow-lg"
+              className="rounded-[24px] bg-surface px-8 py-3 text-base font-semibold text-text-primary transition-shadow hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               style={{ fontFamily: poppins.style.fontFamily, fontWeight: 600 }}
             >
               Start Learning
@@ -106,7 +106,7 @@ const QuestPaths = () => {
           {/* Right column — Stellar graphic */}
           <div className="relative flex w-full items-center justify-center lg:w-1/2">
             <div
-              className="quest-swoosh relative h-[420px] w-[420px] sm:h-[480px] sm:w-[480px]"
+              className="quest-swoosh relative h-[420px] w-[420px] motion-reduce:animate-none sm:h-[480px] sm:w-[480px]"
               style={{ animation: "floatY 3s ease-in-out infinite" }}
             >
               {/* Stellar logo — white, fills the container */}
@@ -123,7 +123,7 @@ const QuestPaths = () => {
               {rewardLabels.map((label) => (
                 <div
                   key={label.id}
-                  className="absolute flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-lg"
+                  className="absolute flex items-center gap-2 rounded-full bg-surface px-4 py-2 shadow-lg"
                   style={{
                     left: label.left,
                     top: label.top,
@@ -134,10 +134,10 @@ const QuestPaths = () => {
                     whiteSpace: "nowrap",
                   }}
                 >
-                  {label.prefix && (
-                    <span style={{ color: "#1A1A1A" }}>{label.prefix}</span>
-                  )}
-                  <span style={{ color: "#22C55E" }}>{label.amount}</span>
+                  {label.prefix ? (
+                    <span className="text-text-primary">{label.prefix}</span>
+                  ) : null}
+                  <span className="text-success">{label.amount}</span>
                 </div>
               ))}
             </div>
@@ -156,9 +156,16 @@ const QuestPaths = () => {
             transform: translateY(-8px);
           }
         }
+
+        @media (prefers-reduced-motion: reduce) {
+          div[style*="animation"] {
+            animation: none !important;
+          }
+        }
       `}</style>
     </section>
   );
 };
 
 export default QuestPaths;
+

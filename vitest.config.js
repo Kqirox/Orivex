@@ -13,6 +13,7 @@ export default defineConfig(({ mode }) => {
 
     return {
         plugins: [react()],
+        css: false,
         test: {
             environment: 'jsdom',
             globals: true,

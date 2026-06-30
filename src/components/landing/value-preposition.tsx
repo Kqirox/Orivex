@@ -31,7 +31,6 @@ const ValueProposition = () => {
         />
       </svg>
 
-      {/* Decorative dots */}
       <svg
         className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-40"
         viewBox="0 0 1200 800"
@@ -45,13 +44,13 @@ const ValueProposition = () => {
         <circle cx="800" cy="120" r="2" fill="white" />
         <circle cx="950" cy="180" r="2.5" fill="white" />
         <circle cx="1050" cy="90" r="2" fill="white" />
-        
+
         <circle cx="200" cy="500" r="2.5" fill="white" />
         <circle cx="400" cy="550" r="2" fill="white" />
         <circle cx="650" cy="600" r="3" fill="white" />
         <circle cx="850" cy="520" r="2" fill="white" />
         <circle cx="1000" cy="580" r="2.5" fill="white" />
-        
+
         <circle cx="100" cy="350" r="2" fill="white" />
         <circle cx="350" cy="400" r="2.5" fill="white" />
         <circle cx="700" cy="350" r="2" fill="white" />
@@ -59,18 +58,15 @@ const ValueProposition = () => {
       </svg>
 
       <div className="relative z-10 mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-10">
-        <div className="text-white mb-9 md:max-w-125">
-          <h2
-            className={`${syne.className} text-3xl font-bold sm:text-5xl lg:text-6xl`}
-          >
+        <div className="mb-9 text-white md:max-w-125">
+          <h2 className={`${syne.className} text-3xl font-bold sm:text-5xl lg:text-6xl`}>
             Start Learning.
           </h2>
 
-          <h2
-            className={`${syne.className} pb-4 pt-3 text-3xl font-bold  sm:text-5xl lg:text-6xl`}
-          >
+          <h2 className={`${syne.className} pb-4 pt-3 text-3xl font-bold sm:text-5xl lg:text-6xl`}>
             Start Earning.
           </h2>
+
           <p>
             Join the decentralized education revolution. Build your skills, earn
             real rewards, and connect with global opportunities today.
@@ -79,7 +75,7 @@ const ValueProposition = () => {
 
         <button
           type="button"
-          className="rounded-full bg-white px-6 py-3 text-sm font-bold text-[#0F172A] transition hover:bg-transparent sm:px-10 md:mt-8 mt-2 border border-transparent cursor-pointer hover:border-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          className="mt-2 rounded-full border border-transparent bg-surface px-6 py-3 text-sm font-bold text-text-primary transition hover:bg-transparent sm:px-10 md:mt-8 hover:border-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
         >
           Start Learning
         </button>
@@ -89,3 +85,4 @@ const ValueProposition = () => {
 };
 
 export default ValueProposition;
+

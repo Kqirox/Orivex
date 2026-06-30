@@ -30,18 +30,18 @@ const testimonials = [
 
 const Testimonial = () => {
   const shouldReduceMotion = useReducedMotion();
+
   return (
-    <section className="py-24" style={{ backgroundColor: "#F9FAFB" }}>
-      <div className="container mx-auto px-4 max-w-7xl">
+    <section className="bg-background py-24">
+      <div className="container mx-auto max-w-7xl px-4">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="mb-20 text-center">
           <motion.h2
             initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={shouldReduceMotion ? { duration: 0 } : undefined}
-            className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6"
-            style={{ color: "#0F172A" }}
+            className="mb-6 font-heading text-4xl font-bold md:text-5xl lg:text-6xl text-text-primary"
           >
             What Our Learners Say
           </motion.h2>
@@ -50,8 +50,7 @@ const Testimonial = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={shouldReduceMotion ? { duration: 0 } : { delay: 0.1 }}
-            className="text-lg md:text-xl max-w-xl mx-auto font-body"
-            style={{ color: "#5F6368" }}
+            className="mx-auto max-w-xl text-lg md:text-xl font-body text-text-secondary"
           >
             Join thousands of learners who are already building their careers
             and earning rewards.
@@ -59,7 +58,7 @@ const Testimonial = () => {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {testimonials.map((item, index) => (
             <motion.div
               key={index}
@@ -67,44 +66,27 @@ const Testimonial = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={shouldReduceMotion ? { duration: 0 } : { delay: index * 0.1 }}
-              className="bg-white rounded-2xl flex flex-col justify-between p-10"
-              style={{ border: "1px solid #E2E8F0" }}
+              className="flex flex-col justify-between rounded-2xl bg-surface p-10 ring-1 ring-border"
             >
               {/* Quote Icon + Text */}
               <div className="relative mb-10">
-
-                <p
-                  className="text-base leading-relaxed font-body relative z-10 pr-8"
-                  style={{ color: "#5F6368" }}
-                >
+                <p className="relative z-10 pr-8 font-body text-base leading-relaxed text-text-secondary">
                   &ldquo;{item.quote}&rdquo;
                 </p>
               </div>
 
               {/* Author */}
-              <div
-                className="flex items-center gap-4 pt-6"
-                style={{ borderTop: "1px solid #E2E8F0" }}
-              >
+              <div className="flex items-center gap-4 border-t border-border pt-6">
                 {/* Empty Avatar Placeholder */}
-                <div
-                  className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0"
-                  style={{ backgroundColor: "#F1F5F9" }}
-                >
-                  <User className="w-6 h-6" style={{ color: "#94A3B8" }} />
+                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-secondary-background">
+                  <User className="h-6 w-6 text-text-muted" />
                 </div>
 
                 <div>
-                  <h4
-                    className="font-heading font-bold text-base"
-                    style={{ color: "#0F172A" }}
-                  >
+                  <h4 className="font-heading text-base font-bold text-text-primary">
                     {item.author}
                   </h4>
-                  <p
-                    className="text-sm font-body"
-                    style={{ color: "#5F6368" }}
-                  >
+                  <p className="font-body text-sm text-text-secondary">
                     {item.role} &bull; {item.location}
                   </p>
                 </div>
@@ -118,3 +100,4 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
+

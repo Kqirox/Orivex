@@ -216,5 +216,13 @@ const HowItWorks = () => {
                 <p className="mt-3 text-sm leading-relaxed text-text-secondary sm:text-sm">
                   {step.description}
                 </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default HowItWorks;

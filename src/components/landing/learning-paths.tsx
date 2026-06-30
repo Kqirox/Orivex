@@ -2,6 +2,7 @@
 
 import type { StaticImageData } from "next/image";
 import Image from "next/image";
+import Link from "next/link";
 import { useRef } from "react";
 import {
   articleIcon,
@@ -138,6 +139,15 @@ const LearningPaths = () => {
             building real applications on the Stellar blockchain — with rewards
             and quests unlocked at every stage.
           </p>
+
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link
+              href="/catalog"
+              className="inline-flex items-center justify-center rounded-full bg-[#F4B42A] px-5 py-3 text-sm font-bold text-[#1A1A1A] transition hover:bg-[#e6a81f]"
+            >
+              Browse the catalog
+            </Link>
+          </div>
         </header>
 
         <div className="relative mt-12 lg:mt-14">

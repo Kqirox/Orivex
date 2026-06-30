@@ -11,7 +11,7 @@ const syne = Syne({
 const Hero = () => {
   return (
     <section
-      className="relative flex min-h-screen items-center overflow-hidden bg-[#f7f7f700]"
+      className="relative flex min-h-screen items-center overflow-hidden bg-secondary-background"
       style={{
         backgroundImage: `url(${heroBg.src}), url("/assets/hero-bg.svg")`,
         backgroundRepeat: "no-repeat, repeat",
@@ -20,14 +20,14 @@ const Hero = () => {
       }}
     >
       <div className="relative mx-auto grid w-full max-w-[1180px] items-center gap-8 px-4 py-8 sm:px-6 sm:py-10 lg:grid-cols-[minmax(0,520px)_minmax(0,524px)] lg:justify-center lg:gap-12 lg:px-10 lg:py-12">
-        <div className="order-2 max-w-xl space-y-5 lg:order-1 lg:justify-self-center lg:space-y-7">
+      <div className="order-2 max-w-xl space-y-5 lg:order-1 lg:justify-self-center lg:space-y-7">
           <h1
-            className={`${syne.className} max-w-[450px] text-2xl leading-[1.02] font-bold text-[#1E1F24] sm:text-6xl`}
+            className={`${syne.className} max-w-[450px] text-2xl leading-[1.02] font-bold text-text-primary sm:text-6xl`}
           >
             Build Your Skills & Earn.
           </h1>
 
-          <p className="max-w-md text-sm sm:leading-7 text-[#565B63] sm:text-lg">
+          <p className="max-w-md text-sm sm:leading-7 text-text-secondary sm:text-lg">
             Join the first decentralized learning protocol in the Stellar
             Ecosystem. Enhance your skills while earning XLM and obtaining
             verifiable credentials that will position you favorably with hiring
@@ -35,10 +35,16 @@ const Hero = () => {
           </p>
 
           <div className="grid grid-cols-2 items-center gap-3 sm:flex sm:mt-14 sm:flex-wrap sm:gap-4">
-            <Button variant="primary" className="w-full sm:w-auto">
+            <button
+              type="button"
+              className="rounded-full bg-primary px-4 py-3 text-sm font-bold text-text-primary transition hover:bg-primary/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:px-8"
+            >
               Start Learning
-            </Button>
-            <Button variant="outline" className="w-full sm:w-auto">
+            </button>
+            <button
+              type="button"
+              className="rounded-full border border-border bg-secondary-background px-4 py-3 text-sm font-bold text-text-primary transition hover:bg-surface focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:px-8"
+            >
               Explore Quests
             </Button>
           </div>
@@ -51,7 +57,7 @@ const Hero = () => {
               height={24}
               className="h-6 w-auto"
             />
-            <p className="text-sm font-medium text-[#23262C]">
+            <p className="text-sm font-medium text-text-primary">
               1k+ Learners already joined
             </p>
           </div>

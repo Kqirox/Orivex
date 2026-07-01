@@ -21,7 +21,7 @@ describe("Textarea", () => {
   it("shows faded text class when state='filled' is forced", () => {
     render(<Textarea state="filled" value="some text" onChange={() => {}} />);
     const ta = screen.getByRole("textbox");
-    expect(ta.className).toMatch(/text-\[#94A3B8\]/);
+    expect(ta.className).toMatch(/text-\[#6B7280\]/);
   });
 
   it("shows error state and alert when state='error' is forced", () => {

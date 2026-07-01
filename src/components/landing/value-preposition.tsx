@@ -1,23 +1,24 @@
-import { Syne } from "next/font/google";
+import { Syne } from 'next/font/google';
+import { Button } from '@/components/ui/Button';
 
 const syne = Syne({
-  subsets: ["latin"],
-  weight: ["700", "800"],
+  subsets: ['latin'],
+  weight: ['700', '800'],
 });
 
 const ValueProposition = () => {
   return (
     <section
-      className="relative flex min-h-125 items-center justify-center overflow-hidden py-16 sm:min-h-150 sm:py-24 before:absolute before:inset-0 before:bg-black before:opacity-50 before:z-0"
+      className="relative flex items-center justify-center py-16 overflow-hidden min-h-125 sm:min-h-150 sm:py-24 before:absolute before:inset-0 before:bg-black before:opacity-50 before:z-0"
       style={{
         backgroundImage: ` url("/assets/hero-preposition.jpg")`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}
     >
       <svg
-        className="absolute top-0 right-0 h-full w-auto opacity-30"
+        className="absolute top-0 right-0 w-auto h-full opacity-30"
         viewBox="0 0 558 625"
         preserveAspectRatio="xMaxYMin meet"
         fill="none"
@@ -31,7 +32,6 @@ const ValueProposition = () => {
         />
       </svg>
 
-      {/* Decorative dots */}
       <svg
         className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-40"
         viewBox="0 0 1200 800"
@@ -45,20 +45,20 @@ const ValueProposition = () => {
         <circle cx="800" cy="120" r="2" fill="white" />
         <circle cx="950" cy="180" r="2.5" fill="white" />
         <circle cx="1050" cy="90" r="2" fill="white" />
-        
+
         <circle cx="200" cy="500" r="2.5" fill="white" />
         <circle cx="400" cy="550" r="2" fill="white" />
         <circle cx="650" cy="600" r="3" fill="white" />
         <circle cx="850" cy="520" r="2" fill="white" />
         <circle cx="1000" cy="580" r="2.5" fill="white" />
-        
+
         <circle cx="100" cy="350" r="2" fill="white" />
         <circle cx="350" cy="400" r="2.5" fill="white" />
         <circle cx="700" cy="350" r="2" fill="white" />
         <circle cx="1050" cy="420" r="3" fill="white" />
       </svg>
 
-      <div className="relative z-10 mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-10">
+      <div className="relative z-10 max-w-3xl px-4 mx-auto text-center sm:px-6 lg:px-10">
         <div className="text-white mb-9 md:max-w-125">
           <h2
             className={`${syne.className} text-3xl font-bold sm:text-5xl lg:text-6xl`}
@@ -67,22 +67,23 @@ const ValueProposition = () => {
           </h2>
 
           <h2
-            className={`${syne.className} pb-4 pt-3 text-3xl font-bold  sm:text-5xl lg:text-6xl`}
+            className={`${syne.className} pb-4 pt-3 text-3xl font-bold sm:text-5xl lg:text-6xl`}
           >
             Start Earning.
           </h2>
+
           <p>
             Join the decentralized education revolution. Build your skills, earn
             real rewards, and connect with global opportunities today.
           </p>
         </div>
 
-        <button
+        <Button
           type="button"
-          className="rounded-full bg-white px-6 py-3 text-sm font-bold text-[#0F172A] transition hover:bg-transparent sm:px-10 md:mt-8 mt-2  border border-transparent cursor-pointer hover:border-white"
+          className="px-6 py-3 mt-2 text-sm font-bold transition border border-transparent rounded-full bg-surface text-text-primary hover:bg-transparent sm:px-10 md:mt-8 hover:border-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
         >
           Start Learning
-        </button>
+        </Button>
       </div>
     </section>
   );

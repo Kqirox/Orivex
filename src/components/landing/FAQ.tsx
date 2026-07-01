@@ -40,8 +40,9 @@ export const FAQ: React.FC = () => {
 
   return (
     <section id="faq" className="w-full py-20 px-4 bg-white flex flex-col items-center">
+    <section className="w-full py-20 px-4 bg-surface flex flex-col items-center">
       {/* Title with tighter tracking and specific Slate color to match Figma */}
-      <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mb-12 text-center tracking-tight">
+      <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-12 text-center tracking-tight">
         Frequently Asked Questions
       </h2>
 
@@ -55,28 +56,28 @@ export const FAQ: React.FC = () => {
               key={index}
               className={`transition-all duration-300 border rounded-xl overflow-hidden ${
                 isOpen 
-                  ? "border-[#FDE047] bg-[#FEFCE8]/40" // Gold border and soft yellow tint for active state
-                  : "border-gray-100 bg-white" // Subtle border for inactive
+                  ? "border-primary/60 bg-primary/10" // Gold border and soft yellow tint for active state
+                  : "border-border bg-surface" // Subtle border for inactive
               }`}
             >
-              <button
-                onClick={() => toggleAccordion(index)}
-                className="w-full flex items-center justify-between p-5 text-left focus:outline-none group"
-                aria-expanded={isOpen}
-                aria-controls={panelId}
-              >
-                <span className={`font-semibold text-lg ${isOpen ? "text-gray-900" : "text-gray-700"}`}>
-                  {item.question}
-                </span>
-
-                <span
-                  className={`transition-transform duration-300 ${
-                    isOpen ? "rotate-180 text-[#FDE047]" : "text-gray-400"
-                  }`}
+                <button
+                  onClick={() => toggleAccordion(index)}
+                  className="w-full flex items-center justify-between p-5 text-left group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  aria-expanded={isOpen}
+                  aria-controls={panelId}
                 >
-                  <ChevronDown size={20} strokeWidth={2} />
-                </span>
-              </button>
+                  <span className={`font-semibold text-lg ${isOpen ? "text-gray-900" : "text-gray-700"}`}>
+                    {item.question}
+                  </span>
+
+                  <span
+                    className={`transition-transform duration-300 ${
+                  isOpen ? "rotate-180 text-primary" : "text-gray-400"
+                    }`}
+                  >
+                    <ChevronDown size={20} strokeWidth={2} aria-hidden="true" />
+                  </span>
+                </button>
 
               <div
                 id={panelId}

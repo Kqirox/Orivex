@@ -25,7 +25,7 @@ describe("Login screen", () => {
     expect(submit).toBeDisabled();
 
     fireEvent.change(screen.getByLabelText("Email address"), {
-      target: { value: "ada@learnault.xyz" },
+      target: { value: "ada@orivex.xyz" },
     });
     fireEvent.change(screen.getByLabelText("PIN"), {
       target: { value: "123456" },

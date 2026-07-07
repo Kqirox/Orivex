@@ -96,7 +96,7 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 | **Low transaction fees**             | Micro-rewards for millions of users         | Economically sustainable at population scale |
 | **Fast settlement (\~3-5 seconds)** | Instant rewards upon completion | Immediate positive reinforcement |
 | **Stablecoin ecosystem (USDC)** | Predictable-value rewards | No volatility risk for learners |
-| **Soroban smart contracts** | Automated credential issuance | Trustless, efficient operations |
+| **Soroban smart contracts**          | Automated credential issuance & index events | Trustless operation, zero issuer downtime |
 | **ZK-proof capabilities** | Privacy-preserving credential verification | Future-proof architecture |
 | **SDF grants & ecosystem** | Alignment with mission | Funding & community support |
 

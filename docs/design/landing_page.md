@@ -1,5 +1,7 @@
 # Hero Section: Learn to Earn Landing Page
 
+> **Note on Figma links:** The Figma file is still hosted under its original design-system filename (`/Learnault`). Until the design team mirrors the file under an `/Orivex` filename, the embedded Figma URLs in this document keep the original file key so the design references remain reachable. Search-and-replace the URL token once the Figma file is mirrored.
+
 ## 🎯 The Job Done
 This PR delivers the high-fidelity design for the "Orivex" landing page Hero section, fulfilling the requirement for a visually striking above-the-fold experience.
 

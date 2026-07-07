@@ -140,7 +140,7 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 
 * Needs: Deliver financial literacy programs to rural communities  
 * Pain point: Tracking engagement and proving impact to donors  
-* Solution: White-label Learnault with custom content \+ automated incentive distribution
+* Solution: White-label Orivex with custom content \+ automated incentive distribution
 
 **Persona: Government Agency**
 

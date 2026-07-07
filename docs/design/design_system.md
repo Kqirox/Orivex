@@ -214,24 +214,34 @@ Helper Text
 
 ---
 
-# Tailwind Mapping (Recommended)
+## Tailwind Mapping (Recommended)
 
-```
+```js
 fontFamily: {
-  heading: ['Syne', 'sans-serif'],
-  body: ['Inter', 'sans-serif'],
-}
+  heading: ["Syne", "sans-serif"],
+  body:    ["Inter", "sans-serif"],
+},
 
 colors: {
-  primary: "#F5B841",
-  secondary: "#14B8A6",
-  background: "#F9FAFB",
-  surface: "#FFFFFF",
+  primary:    "#F5B841",   // Stellar Gold
+  secondary:  "#14B8A6",   // Neon Teal
+
+  background:              "#F9FAFB",
+  "secondary-background":  "#F1F5F9",
+  surface:                 "#FFFFFF",
+  border:                  "#E2E8F0",
+
+  "text-primary":   "#0F172A",
+  "text-secondary": "#475569",
+  "text-muted":     "#94A3B8",
+
   success: "#16A34A",
   warning: "#D97706",
-  error: "#DC2626"
-}
+  error:   "#DC2626",
+},
 ```
+
+Configure via `tailwind.config.js` so component classes (`bg-primary`, `text-text-primary`, etc.) resolve consistently across the app.
 
 ---
 

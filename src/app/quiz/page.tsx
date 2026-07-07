@@ -1,8 +1,8 @@
 import { QuizContainer } from "@/components/quiz/quiz-container";
 
 export const metadata = {
-  title: "Quiz — Learnault",
-  description: "Test your knowledge with Learnault quizzes",
+  title: "Quiz — Orivex",
+  description: "Test your knowledge with Orivex quizzes",
 };
 
 export default function QuizPage() {

@@ -146,7 +146,7 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 
 * Needs: Upskilling program for unemployed youth  
 * Pain point: High administrative costs for small incentives  
-* Solution: Programmable education-to-stipend pipeline via Learnault
+* Solution: Programmable education-to-stipend pipeline via Orivex
 
 ---
 

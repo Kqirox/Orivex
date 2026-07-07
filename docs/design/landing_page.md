@@ -152,7 +152,7 @@ Figma File: [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Learnaul
 ## Quests / Missions Section
 🎯 The Job Done
 
-This PR delivers the high-fidelity UI for the “Quests” section, showcasing the gamified earning layer of Learnault.
+This PR delivers the high-fidelity UI for the “Quests” section, showcasing the gamified earning layer of Orivex.
 
 ## Deliverables Completed:
 

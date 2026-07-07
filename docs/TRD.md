@@ -89,7 +89,7 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 
 ### **Why Stellar?**
 
-| Stellar Feature | Learnault Implementation | Benefit |
+| Stellar Feature | Orivex Implementation | Benefit |
 | :---- | :---- | :---- |
 | **Low transaction fees** | Micro-rewards for millions of users | Economically sustainable at scale |
 | **Fast settlement (\~3-5 seconds)** | Instant rewards upon completion | Immediate positive reinforcement |

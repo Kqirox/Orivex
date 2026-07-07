@@ -57,7 +57,7 @@ const WalletDashboard = () => {
               Your rewards, badges, and next payout
             </h1>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-[#506078] sm:text-lg">
-              Track mock earnings, share credible achievements, and prepare your next mobile-money withdrawal.
+              Track mock earnings, share portable credentials, and prepare your next mobile-money withdrawal - all without leaving the Orivex app.
             </p>
           </div>
 

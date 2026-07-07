@@ -103,7 +103,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/[0.06] pt-7 sm:flex-row">
           <p className="text-xs font-light text-text-muted">
-            © {year} Orivex. All rights reserved.
+            © {year} Orivex Contributors. Built on Stellar.
           </p>
           <div className="flex items-center gap-2 text-xs text-text-muted">
               <span className="relative flex h-1.5 w-1.5">

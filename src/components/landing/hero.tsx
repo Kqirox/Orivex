@@ -31,10 +31,7 @@ const Hero = () => {
           </h1>
 
           <p className="max-w-md text-sm sm:leading-7 text-text-secondary sm:text-lg">
-            Join the first decentralized learning protocol in the Stellar
-            Ecosystem. Enhance your skills while earning XLM and obtaining
-            verifiable credentials that will position you favorably with hiring
-            managers.
+            Join the first decentralized learning protocol on Stellar. Build real-world digital skills, earn USDC and XLM rewards along the way, and graduate with verifiable on-chain credentials that hiring managers can confirm in a single click.
           </p>
 
           <div className="grid items-center grid-cols-2 gap-3 sm:flex sm:mt-14 sm:flex-wrap sm:gap-4">

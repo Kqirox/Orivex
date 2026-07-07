@@ -1,7 +1,7 @@
 # Hero Section: Learn to Earn Landing Page
 
 ## 🎯 The Job Done
-This PR delivers the high-fidelity design for the "LearnAult" landing page Hero section, fulfilling the requirement for a visually striking above-the-fold experience.
+This PR delivers the high-fidelity design for the "Orivex" landing page Hero section, fulfilling the requirement for a visually striking above-the-fold experience.
 
 **Deliverables Completed:**
 * **High-Fidelity Layouts:** Fully designed desktop and mobile (responsive) views in Figma.

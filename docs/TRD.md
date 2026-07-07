@@ -457,7 +457,7 @@ Orivex will be built as open source, inviting contributions for:
 
 | Risk Category | Specific Risk | Probability | Impact | Mitigation Strategy |
 | :---- | :---- | :---- | :---- | :---- |
-| **Technical** | Stellar network congestion | Low | Medium | Implement retry logic, queue transactions |
+| **Technical** | Stellar network congestion        | Low    | Medium | Retry logic + transaction queue             |
 |  | Smart contract vulnerabilities | Low | High | Multiple audits, bug bounty program |
 |  | Mobile app performance in low-bandwidth | Medium | High | Offline-first architecture, progressive loading |
 | **Market** | Low user adoption | Medium | High | Strong referral program, partner channels |

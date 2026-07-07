@@ -76,17 +76,11 @@ All combinations maintain **WCAG AA contrast ratios**.
 
 ## Semantic Colors
 
-Success  
-HEX: #16A34A  
-RGB: 22, 163, 74  
-
-Warning  
-HEX: #D97706  
-RGB: 217, 119, 6  
-
-Error  
-HEX: #DC2626  
-RGB: 220, 38, 38  
+| Token   | HEX       | RGB               | Typical usage            |
+| :------ | :-------- | :---------------- | :----------------------- |
+| success | `#16A34A` | `22, 163, 74`     | Quiz-passed, payouts OK  |
+| warning | `#D97706` | `217, 119, 6`     | Streak expiring soon     |
+| error   | `#DC2626` | `220, 38, 38`     | Validation / failure toast |  
 
 ---
 

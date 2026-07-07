@@ -1,0 +1,30 @@
+name: Brand guard
+
+# Trigger on every PR targetting main, and on direct pushes to the brand
+# scripts themselves so PRs touching the guard logic are guarded in turn.
+on:
+  pull_request:
+    branches: ["main"]
+  push:
+    branches: ["main"]
+    paths:
+      - "scripts/check-brand.sh"
+      - ".github/workflows/brand-guard.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  brand-check:
+    name: Brand integrity check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Full history is required so the script can grep commit subjects.
+          fetch-depth: 0
+
+      - name: Verify brand integrity
+        run: bash scripts/check-brand.sh

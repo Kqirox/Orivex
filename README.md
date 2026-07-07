@@ -14,11 +14,12 @@ Orivex turns self-directed learning into an investable activity: every minute sp
 
 ## Features
 
-- **Learn & Earn**: Complete educational modules and earn Stellar-based token rewards
-- **Verifiable Credentials**: All achievements stored immutably on Stellar
-- **Mobile-First**: Optimized for low-bandwidth environments in emerging markets
-- **Privacy-Preserving**: Future ZK-proof integration for selective disclosure
-- **B2B Talent Pool**: Employers can find verified talent (paid feature)
+- **Learn & Earn** — Complete bite-sized modules that pay out USDC / XLM the moment you finish.
+- **Verifiable Credentials** — Every achievement is anchored to Stellar and instantly reconfirmable.
+- **Mobile-First PWA** — Tailwind-tuned UI designed for low-bandwidth environments and entry-level phones.
+- **Safe Wallets** — Non-custodial Stellar accounts provisioned in seconds, no crypto experience required.
+- **B2B Talent Pool** — Employers query a verified skill graph; recruiters subscribe per seat (paid feature).
+- **Privacy-Forward** — Zero-knowledge proofs planned for selective disclosure of credential contents.
 
 ## Packages
 

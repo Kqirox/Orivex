@@ -24,7 +24,8 @@
         "start": "next start",
         "test": "vitest",
         "test:ui": "vitest --ui",
-        "test:coverage": "vitest run --coverage"
+        "test:coverage": "vitest run --coverage",
+        "brand:check": "bash scripts/check-brand.sh"
     },
     "dependencies": {
         "@iconify/react": "^6.0.2",

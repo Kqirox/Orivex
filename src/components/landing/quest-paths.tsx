@@ -148,13 +148,8 @@ const QuestPaths = () => {
       {/* Float animation */}
       <style jsx>{`
         @keyframes floatY {
-          0%,
-          100% {
-            transform: translateY(0px);
-          }
-          50% {
-            transform: translateY(-8px);
-          }
+          0%, 100% { transform: translateY(0); }
+          50%      { transform: translateY(-8px); }
         }
 
         @media (prefers-reduced-motion: reduce) {

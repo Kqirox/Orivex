@@ -93,7 +93,7 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 
 | Stellar Feature | Orivex Implementation | Benefit |
 | :---- | :---- | :---- |
-| **Low transaction fees** | Micro-rewards for millions of users | Economically sustainable at scale |
+| **Low transaction fees**             | Micro-rewards for millions of users         | Economically sustainable at population scale |
 | **Fast settlement (\~3-5 seconds)** | Instant rewards upon completion | Immediate positive reinforcement |
 | **Stablecoin ecosystem (USDC)** | Predictable-value rewards | No volatility risk for learners |
 | **Soroban smart contracts** | Automated credential issuance | Trustless, efficient operations |

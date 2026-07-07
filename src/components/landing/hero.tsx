@@ -52,13 +52,13 @@ const Hero = () => {
           <div className="flex items-center justify-center gap-3 sm:justify-start">
             <Image
               src={people}
-              alt="Learners joined"
+              alt="Orivex learner community avatars"
               width={45}
               height={24}
               className="w-auto h-6"
             />
             <p className="text-sm font-medium text-text-primary">
-              1k+ Learners already joined
+              1k+ learners already earning on Orivex
             </p>
           </div>
         </div>

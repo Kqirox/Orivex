@@ -9,9 +9,9 @@ interface FAQItem {
 
 const faqData: FAQItem[] = [
   {
-    question: "What is Learnault?",
+    question: "What is Orivex?",
     answer:
-      "Learnault is a decentralized learn-to-earn platform built on the Stellar blockchain. We help users learn digital skills, earn token rewards for their progress, and receive verifiable on-chain credentials.",
+      "Orivex is a decentralized learn-to-earn platform built on the Stellar blockchain. We help users learn digital skills, earn token rewards for their progress, and receive verifiable on-chain credentials.",
   },
   {
     question: "How do I earn rewards?",

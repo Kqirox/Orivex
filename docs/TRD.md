@@ -108,11 +108,11 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 
 **Persona: Maria (Nigeria)**
 
-* Age: 22  
-* Education: Secondary school graduate  
-* Goal: Learn digital skills to get remote work  
-* Challenge: Can't afford paid courses, needs verifiable credentials  
-* Device: Smartphone with limited data
+* Age: 22
+* Education: Secondary school graduate
+* Goal: Land a remote tech job and build a verifiable résumé.
+* Challenge: Cannot afford paid courses; needs credentials an overseas employer will trust.
+* Device: Android smartphone with a 2 GB/month data plan.
 
 **Persona: Jean (Senegal)**
 

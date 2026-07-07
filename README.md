@@ -59,7 +59,7 @@ For detailed architecture, see [ARCHITECTURE.md](./docs/ARCHITECTURE.md).
 ```bash
 # Clone the repository
 git clone https://github.com/Kqirox/Orivex-api.git
-cd learnault-api
+cd Orivex-api
 
 # Install dependencies
 pnpm install
@@ -113,4 +113,4 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 ## Contact
 
 - Discord: [Join our community](https://discord.gg)
-- Email: learnault@toneflix.net
+- Email: orivex@toneflix.net

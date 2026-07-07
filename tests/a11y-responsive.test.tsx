@@ -1,3 +1,5 @@
+import { readFileSync } from "node:fs";
+import path from "node:path";
 import { render } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
 import Home from "@/app/page";
@@ -72,8 +74,17 @@ describe("Responsive Verification — FAQ", () => {
 
 describe("Responsive — Layout Stability", () => {
   it("viewport metatag exists for mobile", () => {
-    const viewport = document.querySelector('meta[name="viewport"]');
-    expect(viewport).toBeTruthy();
+    // Next.js converts the `viewport` export in `src/app/layout.tsx` into a
+    // <meta name="viewport"> tag in the rendered <head>. In JSDOM we never
+    // mount the RootLayout, so we assert the source contract directly.
+    const layoutSource = readFileSync(
+      path.join(process.cwd(), "src/app/layout.tsx"),
+      "utf-8"
+    );
+
+    expect(layoutSource).toMatch(/export\s+const\s+viewport\s*=\s*\{/);
+    expect(layoutSource).toMatch(/width:\s*['"]device-width['"]/);
+    expect(layoutSource).toMatch(/initialScale:\s*1/);
   });
 
   it("images have width/height to prevent CLS", () => {

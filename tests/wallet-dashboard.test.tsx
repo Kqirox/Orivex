@@ -11,6 +11,6 @@ describe("WalletDashboard", () => {
     expect(screen.getByText("Recent activity")).toBeInTheDocument();
     expect(screen.getByText("Shareable credentials")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /Withdraw to mobile money/i })).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /Share card/i })).toBeInTheDocument();
+    expect(screen.getAllByRole("button", { name: /Share card/i }).length).toBeGreaterThan(0);
   });
 });

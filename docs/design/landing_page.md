@@ -1,7 +1,7 @@
 # Hero Section: Learn to Earn Landing Page
 
 ## 🎯 The Job Done
-This PR delivers the high-fidelity design for the "Orivex" landing page Hero section, fulfilling the requirement for a visually striking above-the-fold experience.
+This PR delivers the high-fidelity design for the Orivex landing-page Hero, fulfilling the requirement for a visually striking above-the-fold experience that communicates "learn to earn on Stellar" at a glance.
 
 **Deliverables Completed:**
 * **High-Fidelity Layouts:** Fully designed desktop and mobile (responsive) views in Figma.
@@ -11,7 +11,7 @@ This PR delivers the high-fidelity design for the "Orivex" landing page Hero sec
 ## 🧠 Design Rationale
 
 **1. Visualizing "Learn to Earn"**
-Instead of a generic abstract background or a complex dashboard UI, I opted for a dynamic collage of real, relatable learners. To instantly communicate the tech and Web3 nature of the platform, I integrated floating badges—specifically the Stellar network logo and a coding icon. This visually bridges the gap between human education and blockchain technology.
+Instead of a generic abstract background or a complex dashboard UI, I opted for a dynamic collage of real, relatable learners. To instantly communicate the tech and Web3 nature of the platform, I integrated floating badges-specifically the Stellar network logo and a coding icon. This visually bridges the gap between human education and blockchain technology.
 
 **2. Copy & CTA Strategy**
 * **Primary CTA ("Start Learning"):** Treated with a solid, high-contrast brand yellow to ensure it is the most prominent interactive element on the screen, driving immediate user action.
@@ -59,7 +59,7 @@ I designed custom, lightweight yellow line icons. This prevents the section from
 ## How It Works Section
 🎯 The Job Done
 
-This PR delivers the high-fidelity UI for the “How It Works” section, designed to clearly communicate Orivex’s core product loop in a simple, step-by-step format.
+This PR delivers the high-fidelity UI for the "How It Works" section, designed to clearly communicate Orivex's core product loop in a simple, step-by-step format.
 
 ## Deliverables Completed:
 
@@ -99,7 +99,7 @@ A horizontal connector (line or subtle arrows) is used on desktop to guide the e
 ## Stellar Learning Path Section
 🎯 The Job Done
 
-This PR delivers the high-fidelity UI for the “Stellar Learning Path” section, introducing a structured, tier-based course system to replace generic learning categories.
+This PR delivers the high-fidelity UI for the "Stellar Learning Path" section, introducing a structured, tier-based course system to replace generic learning categories.
 
 ## Deliverables Completed:
 
@@ -144,7 +144,7 @@ This encourages users to continue rather than drop off.
 ## Quests / Missions Section
 🎯 The Job Done
 
-This PR delivers the high-fidelity UI for the “Quests” section, showcasing the gamified earning layer of Orivex.
+This PR delivers the high-fidelity UI for the "Quests" section, showcasing the gamified earning layer of Orivex.
 
 ## Deliverables Completed:
 
@@ -154,11 +154,11 @@ Responsive Layouts: Grid (desktop) and stacked cards (mobile)
 
 ## 🧠 Design Rationale
 
-1. Reinforcing “Earn While You Learn”
+1. Reinforcing "Earn While You Learn"
 This section makes the earning mechanism tangible by showing real examples of tasks users can complete.
 
 2. Gamification for Engagement
-By presenting tasks as “quests,” the experience feels interactive and rewarding rather than instructional.
+By presenting tasks as "quests," the experience feels interactive and rewarding rather than instructional.
 
 3. Clear Reward Visibility
 Token rewards are visually highlighted to immediately communicate value.
@@ -174,7 +174,7 @@ Token rewards are visually highlighted to immediately communicate value.
 ## Testimonials Section
 🎯 The Job Done
 
-This PR delivers the high-fidelity UI for the “Success Stories” section, providing social proof through real user experiences.
+This PR delivers the high-fidelity UI for the "Success Stories" section, providing social proof through real user experiences.
 
 ## Deliverables Completed:
 
@@ -232,7 +232,7 @@ Accordion design prevents overload while keeping content accessible.
 ## Final CTA Section
 🎯 The Job Done
 
-This PR delivers the high-impact final call-to-action section, designed to convert users after they’ve explored the page.
+This PR delivers the high-impact final call-to-action section, designed to convert users after they've explored the page.
 
 ## Deliverables Completed:
 

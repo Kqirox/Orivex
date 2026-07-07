@@ -167,8 +167,11 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 
 ### **Phase 2: Enhanced Features**
 
-| Feature | Description | User Value |
-| :---- | :---- | :---- |
+Phase 2 layers optional paid upgrades and richer localisation on top of the
+free Phase 1 experience.
+
+| Feature               | Description                                         | User Value                                |
+| :-------------------- | :-------------------------------------------------- | :---------------------------------------- |
 | **Premium Certificates** | Official blockchain credentials (paid) | Career advancement tool |
 | **Skill Wallet** | User dashboard to manage and share credentials | Full control over personal data |
 | **Localized Content** | Modules in local languages \+ voiceovers | Broader accessibility |

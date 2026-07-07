@@ -170,7 +170,8 @@ Token rewards are visually highlighted to immediately communicate value.
  Gamified learning experience
 
 
-## Testimonials Section
+## Testimonials - Success Stories
+
 🎯 The Job Done
 
 This PR delivers the high-fidelity UI for the "Success Stories" section, providing social proof through real user experiences.

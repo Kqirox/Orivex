@@ -250,7 +250,7 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 
 **Step 1: DISCOVER**
 
-* User hears about Learnault via referral, social media, or partner program  
+* User hears about Orivex via referral, social media, or partner program  
 * Visits landing page explaining learn-to-earn concept  
 * Views available learning paths (Financial Literacy, Digital Skills, etc.)
 

@@ -30,7 +30,7 @@ The design uses a clean, asymmetrical split on desktop to balance the heavy typo
 
 
 ## 🎯 The Job Done
-This PR delivers the high-fidelity UI for the "Why Learnault" section, designed to sit directly below the Hero. It successfully translates the core value propositions of Web3 education for users in emerging markets into a digestible, scannable format.
+This PR delivers the high-fidelity UI for the "Why Orivex" section, designed to sit directly below the Hero. It successfully translates the core value propositions of Web3 education for users in emerging markets into a digestible, scannable format.
 
 **Deliverables Completed:**
 * **High-Fidelity Layouts:** Responsive desktop (3x2 grid) and mobile (vertical stack) views designed in Figma.

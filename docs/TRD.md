@@ -529,7 +529,7 @@ Planned surveys and interviews will explore:
 
 **Document prepared by:** 3m1n3nc3  
 **Contact:** [hi@toneflix.net](mailto:hi@toneflix.net)  
-**GitHub:** github.com/toneflix/learnault  
+**GitHub:** github.com/Kqirox/Orivex  
 **Twitter:** \[TBD\]
 
 ##  **Repository 2: Backend Engine (Node.js/Postgres/Redis)**

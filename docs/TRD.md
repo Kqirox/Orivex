@@ -66,7 +66,7 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 
 ## **SOLUTION OVERVIEW**
 
-**Learnault** addresses these problems through a three-pronged approach:
+**Orivex** addresses these problems through a three-pronged approach:
 
 ### **1\. Accessible, Incentivized Learning**
 

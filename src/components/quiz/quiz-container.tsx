@@ -11,6 +11,8 @@ interface QuizQuestion {
   correctIndex: number;
 }
 
+// Demo questions used by the landing-page quiz widget. The real API
+// will replace this with Soroban-anchored quiz definitions.
 const MOCK_QUESTIONS: QuizQuestion[] = [
   {
     question: "What is the Stellar network primarily used for?",
@@ -174,7 +176,7 @@ function QuizResults({
                     <p className="mt-1 text-xs text-muted-foreground">
                       Your answer:{" "}
                       <span className="text-red-600">{q.options[answers[i]]}</span>
-                      {" — "}Correct:{" "}
+                      {" - "}Correct:{" "}
                       <span className="text-green-700">
                         {q.options[q.correctIndex]}
                       </span>

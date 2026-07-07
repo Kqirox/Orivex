@@ -1,7 +1,10 @@
 # Orivex Design System
 
-A light-mode-first design system for the **Orivex Learn-to-Earn platform**.  
-The aesthetic focuses on clarity, accessibility, and high-contrast CTAs suitable for educational content and Web3 interfaces.
+A light-mode-first design system for the **Orivex Learn-to-Earn platform**.
+
+The aesthetic focuses on clarity, accessibility, and high-contrast CTAs — the exact qualities needed for educational content delivered to first-time Web3 users.
+
+> Living document. Tokens here are the source of truth; Tailwind config and component code must mirror them.
 
 ---
 

@@ -33,7 +33,7 @@ const DOTS = Array.from({ length: 50 }, (_, i) => ({
 // positions tuned to match the Stellar logo arcs
 const rewardLabels = [
   { id: 1, prefix: "", amount: "+75 XLM", left: "28%", top: "14%" },
-  { id: 2, prefix: "Quest", amount: "+95 XLM", left: "68%", top: "34%" },
+  { id: 2, prefix: "Module", amount: "+95 XLM", left: "68%", top: "34%" },
   {
     id: 3,
     prefix: "Tier Completed",

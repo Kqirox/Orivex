@@ -32,21 +32,22 @@ Orivex turns self-directed learning into an investable activity: every minute sp
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                      PWA Frontend (React)                   │
-└───────────────────────────┬─────────────────────────────────┘
-                            │
-┌───────────────────────────▼─────────────────────────────────┐
-│                     Backend API (Node.js)                   │
-└───────────────────────────┬─────────────────────────────────┘
-                            │
-┌───────────────────────────▼─────────────────────────────────┐
-│                   Stellar Blockchain Layer                  │
-│      (Horizon API • Soroban Contracts • Asset Management)   │
-└─────────────────────────────────────────────────────────────┘
+              ┌──────────────────────────────────────┐
+              │  PWA Frontend (Next.js + Tailwind v4) │
+              └────────────────┬─────────────────────┘
+                               │ REST + Webhooks
+              ┌────────────────▼─────────────────────┐
+              │ Backend API (Node.js + Express + PG)  │
+              └────────────────┬─────────────────────┘
+                               │ Horizon API + Indexer
+              ┌────────────────▼─────────────────────┐
+              │       Stellar Blockchain Layer       │
+              │  Soroban • Anchored Credentials •    │
+              │  USDC / XLM Asset Management         │
+              └──────────────────────────────────────┘
 ```
 
-For detailed architecture, see [ARCHITECTURE.md](./docs/ARCHITECTURE.md).
+Three-tier by design: presentation stays thin, business logic lives in our own service so we can audit anti-sybil behaviour, and trust-critical state (credential issuance, reward distribution) lives on Stellar where anyone can verify it independently. See [ARCHITECTURE.md](./docs/ARCHITECTURE.md) for the full specification.
 
 ## Getting Started
 

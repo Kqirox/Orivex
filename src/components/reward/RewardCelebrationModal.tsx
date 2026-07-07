@@ -79,7 +79,7 @@ export function RewardCelebrationModal({ amount, badgeLabel, onClose }: RewardCe
               </div>
             </div>
             <p id="reward-modal-description" className="mt-4 max-w-2xl text-sm leading-6 text-slate-300 sm:text-base">
-              Your stellar reward moment is ready. This is a design-only celebration state with a placeholder note for the blockchain explorer and wallet confirmation.
+              Your reward moment is ready. This design celebration state includes a placeholder for the Stellar explorer link and the wallet confirmation step.
             </p>
           </div>
 

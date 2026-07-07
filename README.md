@@ -24,7 +24,7 @@ A world where anyone, anywhere can access quality education, earn while learning
 | :-------------------------------------------------------------- | :---------------------------------------------- | :----------------------------------- |
 | [`contracts`](https://github.com/Kqirox/Orivex-contracts) | Soroban smart contracts for credential issuance | Rust, Soroban                        |
 | [`api`](https://github.com/Kqirox/Orivex-api)             | Backend API for user management and rewards     | Node.js, Express, PostgreSQL         |
-| [`app`](https://github.com/learnault/learnault)                 | Mobile-first PWA frontend                       | React, Next.js, TypeScript, Tailwind |
+| [`app`](https://github.com/Kqirox/Orivex)                 | Mobile-first PWA frontend                       | React, Next.js, TypeScript, Tailwind |
 
 ## Architecture
 

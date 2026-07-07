@@ -310,7 +310,7 @@ free Phase 1 experience.
 | **B2B Talent Dashboard** | $500-$2000/month | Employers, Recruiters | 80%+ |
 | **Premium Certificates** | $5-$20 one-time | Advanced Learners | 90%+ |
 | **White-Label Platform** | $10k-$50k setup \+ monthly | NGOs, Governments | 60%+ |
-| **Targeted Advertising** | $10 CPM | EdTech, FinTech | 70%+ |
+| **Targeted Skill Campaigns**| $10 CPM                        | EdTech, FinTech       | 70%+   |
 
 ### **Financial Projections (Year 1-3)**
 

@@ -70,7 +70,7 @@ const QuestPaths = () => {
         style={{ fontFamily: poppins.style.fontFamily }}
       >
         <span className="inline-block rounded-[20px] border border-white bg-surface px-4 py-2 text-[13px] font-semibold text-text-primary">
-          Earn Quest
+          Earn Rewards
         </span>
       </div>
 

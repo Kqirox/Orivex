@@ -525,12 +525,10 @@ Planned surveys and interviews will explore:
    * Month 5-6: Beta testing with 100+ users  
    * Month 6+: Public launch and community growth
 
----
-
-**Document prepared by:** 3m1n3nc3  
-**Contact:** [hi@toneflix.net](mailto:hi@toneflix.net)  
+---**Document prepared by:** Orivex Contributors  
+**Contact:** [orivex@toneflix.net](mailto:orivex@toneflix.net)  
 **GitHub:** github.com/Kqirox/Orivex  
-**Twitter:** \[TBD\]
+**Twitter:** \[TBD\] 
 
 ##  **Repository 2: Backend Engine (Node.js/Postgres/Redis)**
 

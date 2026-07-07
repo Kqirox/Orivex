@@ -8,7 +8,9 @@
 
 ## Vision
 
-A world where anyone, anywhere can access quality education, earn while learning, and prove their skills with verifiable blockchain credentials — all for free.
+A world where anyone, anywhere can access quality education, earn while learning, and prove their skills with verifiable, on-chain credentials — all for free.
+
+Orivex turns self-directed learning into an investable activity: every minute spent learning has a measurable economic return.
 
 ## Features
 

@@ -127,8 +127,7 @@ Unlockable quests
 3. Motivation Through Unlocks
 Tier gating creates a sense of achievement:
 
-Tier 1 unlocks Tier 2
-Tier 2 unlocks Tier 3
+Tier 1 unlocks Tier 2 → Tier 2 unlocks Tier 3 → and so on. The gating itself becomes the motivation loop.
 
 This encourages users to continue rather than drop off.
 

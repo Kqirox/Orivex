@@ -183,7 +183,7 @@ free Phase 1 experience.
 | Feature | Description | User Value |
 | :---- | :---- | :---- |
 | **Employer Dashboard** | Search and verify candidate skills (B2B paid) | Efficient hiring |
-| **ZK-Verified Skills** | Prove skills without revealing all data | Privacy-preserving verification |
+| **ZK-Verified Skills**        | Prove a skill without revealing every module detail    | Privacy-preserving verification           |
 | **Learning Paths** | Curated sequences for specific careers | Guided skill development |
 | **Community Features** | Study groups, peer mentoring | Social learning |
 | **Soroban Smart Contracts** | Automated scholarship programs | Trustless fund distribution |

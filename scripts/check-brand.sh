@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
-# Brand guard — fails (exit 1) if the previous brand name or external design
-# system URLs leak back into the repo via tracked files or commit messages.
+# Brand guard — fails (exit 1) if a deprecated brand artifact or external
+# design-system URL leaks back into the repo via tracked files or commit
+# messages.
 #
 # Runs locally:  bash scripts/check-brand.sh
 # Runs in CI:    .github/workflows/brand-guard.yml
+#               (or via `pnpm brand:check`)
 #
-# History of the rebrand: the project was previously branded "Learnault"
-# (hosted under the `toneflix` org with `<Learnault>`-prefixed components and
-# assets). The repo was rewritten to `Orivex` under the `Kqirox` org. This
-# guard makes sure neither the old name nor external `figma.com` URLs come
-# back in future commits.
+# The repo was migrated to the Orivex brand under the `Kqirox` org. This
+# guard exists to make sure deprecated artifacts and external `figma.com`
+# URLs do not silently re-appear in future commits.
 
 set -u
 

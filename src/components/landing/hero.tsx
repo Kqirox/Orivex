@@ -48,7 +48,7 @@ const Hero = () => {
               type="button"
               className="px-4 py-3 text-sm font-bold transition border rounded-full border-border bg-secondary-background text-text-primary hover:bg-surface focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:px-8"
             >
-              Explore Quests
+              Browse Catalog
             </Button>
           </div>
 

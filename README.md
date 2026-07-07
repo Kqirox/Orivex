@@ -61,19 +61,21 @@ Three-tier by design: presentation stays thin, business logic lives in our own s
 ### Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/Kqirox/Orivex-Backend.git
-cd Orivex-Backend
+# Clone the app (frontend) repository
+git clone https://github.com/Kqirox/Orivex.git
+cd Orivex
 
 # Install dependencies
 pnpm install
 
-# Set up environment variables
+# Copy and edit env defaults
 cp .env.example .env
 
-# Run development environment
+# Boot the Next.js dev server on http://localhost:3000
 pnpm dev
 ```
+
+> Looking for the backend service? It lives in a separate repo ([Orivex-Backend](https://github.com/Kqirox/Orivex-Backend)). The Soroban smart contracts live in [Orivex-Contracts](https://github.com/Kqirox/Orivex-Contracts).
 
 ### Development Workflow
 

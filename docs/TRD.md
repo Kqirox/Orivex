@@ -225,7 +225,7 @@ free Phase 1 experience.
 | **Caching** | Redis | Session management, rate limiting |
 | **Blockchain SDK** | stellar-sdk | Official Stellar integration |
 | **Smart Contracts** | Soroban (Rust) | Automated credential issuance |
-| **Hosting** | AWS/African cloud providers | Regional optimization |
+| **Hosting**          | Vercel + regional edge providers | Low-latency delivery for emerging-markets users    |
 
 ### **Data Flow**
 

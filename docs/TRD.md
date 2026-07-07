@@ -289,7 +289,7 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 │DISCOVER     │───► │ SUBSCRIBE │───►│ SEARCH        │───►│  VERIFY        │  
 └─────────┘            └─────────┘           └─────────┘           └─────────┘
 
-**Step 1:** Learn about Learnault Talent Pool   
+**Step 1:.. Learn about Orivex Talent Pool   
 **Step 2:** Choose subscription tier (monthly/annual)   
 **Step 3:** Search for candidates by skill, location, module completion   
 **Step 4:** View verified credentials (on-chain) and contact candidates

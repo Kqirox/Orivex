@@ -7,7 +7,7 @@ import { User } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "Learnault helped me land my first remote job. The verifiable credentials proved my skills to employers who otherwise wouldn't have looked at my resume.",
+      "Orivex helped me land my first remote job. The verifiable credentials proved my skills to employers who otherwise wouldn't have looked at my resume.",
     author: "Amara",
     role: "Frontend Developer",
     location: "Nigeria",

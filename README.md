@@ -115,5 +115,8 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ## Contact
 
-- Discord: [Join our community](https://discord.gg)
+- Discord: [Join our community](https://discord.gg/orivex)
 - Email: [hello@orivex.network](mailto:hello@orivex.network)
+- GitHub Discussions: [github.com/Kqirox/Orivex/discussions](https://github.com/Kqirox/Orivex/discussions)
+
+For partnerships and B2B onboarding, write to [partners@orivex.network](mailto:partners@orivex.network).

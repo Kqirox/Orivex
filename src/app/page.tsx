@@ -6,6 +6,7 @@ import FAQ from "@/components/landing/FAQ";
 import Footer from "@/components/landing/footer";
 import ValueProposition from "@/components/landing/value-preposition";
 import QuestPaths from "@/components/landing/quest-paths";
+import HowItWorks from "@/components/landing/how-it-works";
 
 const Home = () => {
   return (

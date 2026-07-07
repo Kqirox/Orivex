@@ -5,7 +5,8 @@ import { describe, it, expect } from 'vitest';
 describe('Home Page', () => {
     it('renders the hero title', () => {
         render(<Home />);
-        expect(screen.getByText('Build Your Skills & Earn.')).toBeInTheDocument();
+        expect(screen.getByText(/Build Your Skills\./)).toBeInTheDocument();
+        expect(screen.getByText(/Earn on Stellar\./)).toBeInTheDocument();
     });
 
     it('checks if environment variables are loaded', () => {

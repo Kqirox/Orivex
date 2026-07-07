@@ -132,7 +132,7 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 
 * Needs: Vetted talent in specific skill categories  
 * Pain point: Manual verification processes don't scale  
-* Solution: API integration with Learnault's credential database
+* Solution: API integration with Orivex's credential database
 
 ### **Tertiary: Institutional Partners**
 

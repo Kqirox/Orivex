@@ -217,7 +217,7 @@ free Phase 1 experience.
 
 | Layer | Technology | Rationale |
 | :---- | :---- | :---- |
-| **Frontend** | React \+ PWA | Mobile-first, installable, works offline |
+| **Frontend**         | React 19 + Next.js 16 PWA        | Mobile-first, installable, works offline           |
 | **State Management** | Redux Toolkit | Predictable state for complex user flows |
 | **UI Framework** | Tailwind CSS | Rapid development, responsive design |
 | **Backend** | Node.js \+ Express | Lightweight, scalable API |

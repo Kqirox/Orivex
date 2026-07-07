@@ -16,7 +16,7 @@ Instead of a generic abstract background or a complex dashboard UI, I opted for 
 **2. Copy & CTA Strategy**
 * **Primary CTA ("Start Learning"):** Treated with a solid, high-contrast brand yellow to ensure it is the most prominent interactive element on the screen, driving immediate user action.
 * **Secondary CTA Pivot ("Explore Quests"):** The original brief requested "For Employers". However, given the Web3 and blockchain-powered nature of the platform, changing this to "Explore Quests" leans into the gamified "Learn to Earn" ecosystem. It feels much more native to the user journey.
-* **Social Proof:** Added a small "1k+ Learners already joined" indicator with avatar thumbnails right below the CTAs to build immediate trust.
+* **Social Proof:** A "1k+ Learners already joined" indicator + avatar thumbnails immediately below the CTAs builds trust.
 
 **3. Layout & Hierarchy**
 The design uses a clean, asymmetrical split on desktop to balance the heavy typography on the left with the energetic imagery on the right. The ample whitespace ensures the "Build Your Skills & Earn" headline breathes and captures the user's full attention immediately.

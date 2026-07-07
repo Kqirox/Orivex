@@ -508,8 +508,9 @@ Planned surveys and interviews will explore:
 * What skills would you most like to learn?  
 * How much would a small reward (e.g., $0.25) motivate you?  
 * Have you ever used cryptocurrency? If not, why?  
-* How do you currently prove your skills to employers?  
-* What's your preferred language for learning?
+* How do you currently prove your skills to employers or clients?
+* Which language do you most prefer to learn in?
+* What concerns would you have about being paid in stablecoins?
 
 ---
 

@@ -202,7 +202,8 @@ Accessing opportunities
  Responsive layout
 
 
-## FAQ Section
+## FAQ - Reducing Friction
+
 🎯 The Job Done
 
 This PR delivers the high-fidelity UI for the FAQ section, addressing common user concerns and reducing friction.

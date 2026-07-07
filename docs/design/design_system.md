@@ -294,12 +294,13 @@ We need to implement three main variants of buttons, each with their respective 
 ---
 
 ## 2. Input Fields (Email)
+
 The email input field requires validation states with icon feedback. All inputs have a top label with an envelope icon.
 
-* **Default:** Light grey border, placeholder text ("Enter email").
-* **Focus/Active:** Purple/indigo border, user text entered, green checkmark icon on the right.
-* **Success/Filled:** Light grey border, user text entered, green checkmark icon on the right.
-* **Error:** Red border, red user text. Includes a red error icon and message below the field ("Email is not valid"), alongside an info `(i)` icon on the far right.
+* **Default** — `#E2E8F0` border, the literal placeholder *"Enter email"*.
+* **Focus/Active** — indigo border, learner text entered, green checkmark icon at the right.
+* **Success / Filled** — `#E2E8F0` border, learner text entered, green checkmark icon at the right.
+* **Error** — `#DC2626` border, `#DC2626` text. Includes a red error icon + message (`"Email is not valid"`) below the field, with a `(i)` info icon on the far right.
 
 ---
 

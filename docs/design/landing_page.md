@@ -22,7 +22,7 @@ Instead of a generic abstract background or a complex dashboard UI, I opted for 
 The design uses a clean, asymmetrical split on desktop to balance the heavy typography on the left with the energetic imagery on the right. The ample whitespace ensures the "Build Your Skills & Earn" headline breathes and captures the user's full attention immediately.
 
 ## 🔗 Links & Resources
-* **Figma File:** [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Orivex?node-id=0-1&t=vWoCZDXcNc5gApha-1)
+* **Figma File:** [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Learnault?node-id=0-1&t=vWoCZDXcNc5gApha-1)
 
 ![alt text](image.png)
 
@@ -51,7 +51,7 @@ To make the dense Web3 concepts easily digestible, I utilized a clean grid layou
 I designed custom, lightweight yellow line icons. This prevents the section from feeling visually overwhelming after the heavy imagery in the Hero section, guiding the user's eye directly to the value proposition copy.
 
 ## 🔗 Links & Resources
-* **Figma File:** [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Orivex?node-id=0-1&t=vWoCZDXcNc5gApha-1)
+* **Figma File:** [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Learnault?node-id=0-1&t=vWoCZDXcNc5gApha-1)
 
 
 ### ✅ Acceptance Criteria Checklist
@@ -93,7 +93,7 @@ This reinforces both progression and purpose.
 A horizontal connector (line or subtle arrows) is used on desktop to guide the eye across steps, while mobile stacks maintain clarity and readability.
 
 ## 🔗 Links & Resources
-Figma File: [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Orivex?node-id=0-1&t=8jAnWVoNYABdUrUb-1)
+Figma File: [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Learnault?node-id=0-1&t=8jAnWVoNYABdUrUb-1)
 
 ✅ Acceptance Criteria Checklist
  Clear 3-step product flow
@@ -139,7 +139,7 @@ Tier 2 unlocks Tier 3
 This encourages users to continue rather than drop off.
 
 ## 🔗 Links & Resources
-Figma File: [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Orivex?node-id=0-1&t=8jAnWVoNYABdUrUb-1)
+Figma File: [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Learnault?node-id=0-1&t=8jAnWVoNYABdUrUb-1)
 
 ✅ Acceptance Criteria Checklist
  Structured tier-based course system
@@ -172,7 +172,7 @@ By presenting tasks as “quests,” the experience feels interactive and reward
 Token rewards are visually highlighted to immediately communicate value.
 
 ## 🔗 Links & Resources
-Figma File: [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Orivex?node-id=0-1&t=8jAnWVoNYABdUrUb-1)
+Figma File: [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Learnault?node-id=0-1&t=8jAnWVoNYABdUrUb-1)
 
 ✅ Acceptance Criteria Checklist
  Clear quest/task representation
@@ -205,7 +205,7 @@ Gaining skills
 Accessing opportunities
 
 ## 🔗 Links & Resources
-Figma File: [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Orivex?node-id=0-1&t=8jAnWVoNYABdUrUb-1)
+Figma File: [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Learnault?node-id=0-1&t=8jAnWVoNYABdUrUb-1)
 
 ✅ Acceptance Criteria Checklist
  Clear social proof
@@ -234,7 +234,7 @@ Web3 platforms often raise questions. This section proactively answers them.
 Accordion design prevents overload while keeping content accessible.
 
 ## 🔗 Links & Resources
-Figma File: [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Orivex?node-id=0-1&t=8jAnWVoNYABdUrUb-1)
+Figma File: [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Learnault?node-id=0-1&t=8jAnWVoNYABdUrUb-1)
 
 ✅ Acceptance Criteria Checklist
  Clear, concise answers
@@ -265,7 +265,7 @@ Simple messaging ensures no confusion about what to do next:
 Start Learning → Start Earning
 
 ## 🔗 Links & Resources
-Figma File: [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Orivex?node-id=0-1&t=8jAnWVoNYABdUrUb-1)
+Figma File: [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Learnault?node-id=0-1&t=8jAnWVoNYABdUrUb-1)
 
 ✅ Acceptance Criteria Checklist
  Strong conversion-focused CTA
@@ -294,7 +294,7 @@ Provides users with quick access to important areas of the platform.
 Including documentation and contact points reinforces legitimacy.
 
 ## 🔗 Links & Resources
-Figma File: [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Orivex?node-id=0-1&t=8jAnWVoNYABdUrUb-1)
+Figma File: [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Learnault?node-id=0-1&t=8jAnWVoNYABdUrUb-1)
 
 ✅ Acceptance Criteria Checklist
  Clear navigation structure

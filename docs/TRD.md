@@ -1,4 +1,4 @@
-# **LEARNAULT**
+# **ORIVEX**
 
 ## **Learn-to-Earn Education Platform on Stellar**
 
@@ -27,7 +27,7 @@
 
 ## **EXECUTIVE SUMMARY**
 
-**Learnault** is a decentralized, learn-to-earn educational platform built on the Stellar blockchain that democratizes access to financial literacy and digital skills while creating verifiable, portable credentials for learners worldwide.
+**Orivex** is a decentralized, learn-to-earn educational platform built on the Stellar blockchain that democratizes access to financial literacy and digital skills while creating verifiable, portable credentials for learners worldwide.
 
 The platform incentivizes learning through small Stellar-based token rewards, addresses the global skills gap, and creates a sustainable business model by monetizing verified learner data for employers and institutions—all while keeping the learning experience completely free for users.
 
@@ -66,7 +66,7 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 
 ## **SOLUTION OVERVIEW**
 
-**Learnault** addresses these problems through a three-pronged approach:
+**Orivex** addresses these problems through a three-pronged approach:
 
 ### **1\. Accessible, Incentivized Learning**
 
@@ -89,7 +89,7 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 
 ### **Why Stellar?**
 
-| Stellar Feature | Learnault Implementation | Benefit |
+| Stellar Feature | Orivex Implementation | Benefit |
 | :---- | :---- | :---- |
 | **Low transaction fees** | Micro-rewards for millions of users | Economically sustainable at scale |
 | **Fast settlement (\~3-5 seconds)** | Instant rewards upon completion | Immediate positive reinforcement |
@@ -126,13 +126,13 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 
 * Needs: Junior developers with verified skills  
 * Pain point: Can't trust resumes, interviews are time-consuming  
-* Solution: Search Learnault's verified talent pool
+* Solution: Search Orivex's verified talent pool
 
 **Persona: Global Remote Work Platform**
 
 * Needs: Vetted talent in specific skill categories  
 * Pain point: Manual verification processes don't scale  
-* Solution: API integration with Learnault's credential database
+* Solution: API integration with Orivex's credential database
 
 ### **Tertiary: Institutional Partners**
 
@@ -140,13 +140,13 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 
 * Needs: Deliver financial literacy programs to rural communities  
 * Pain point: Tracking engagement and proving impact to donors  
-* Solution: White-label Learnault with custom content \+ automated incentive distribution
+* Solution: White-label Orivex with custom content \+ automated incentive distribution
 
 **Persona: Government Agency**
 
 * Needs: Upskilling program for unemployed youth  
 * Pain point: High administrative costs for small incentives  
-* Solution: Programmable education-to-stipend pipeline via Learnault
+* Solution: Programmable education-to-stipend pipeline via Orivex
 
 ---
 
@@ -250,7 +250,7 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 
 **Step 1: DISCOVER**
 
-* User hears about Learnault via referral, social media, or partner program  
+* User hears about Orivex via referral, social media, or partner program  
 * Visits landing page explaining learn-to-earn concept  
 * Views available learning paths (Financial Literacy, Digital Skills, etc.)
 
@@ -289,7 +289,7 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 │DISCOVER     │───► │ SUBSCRIBE │───►│ SEARCH        │───►│  VERIFY        │  
 └─────────┘            └─────────┘           └─────────┘           └─────────┘
 
-**Step 1:** Learn about Learnault Talent Pool   
+**Step 1:** Learn about Orivex Talent Pool   
 **Step 2:** Choose subscription tier (monthly/annual)   
 **Step 3:** Search for candidates by skill, location, module completion   
 **Step 4:** View verified credentials (on-chain) and contact candidates
@@ -390,7 +390,7 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 
 ### **Open Source Contributors**
 
-Learnault will be built as open source, inviting contributions for:
+Orivex will be built as open source, inviting contributions for:
 
 * Translations (community-led localization)  
 * Additional learning modules  
@@ -489,7 +489,7 @@ Learnault will be built as open source, inviting contributions for:
 
 ### **B: Competitive Analysis**
 
-| Competitor | Strengths | Weaknesses | Learnault Advantage |
+| Competitor | Strengths | Weaknesses | Orivex Advantage |
 | :---- | :---- | :---- | :---- |
 | **Coinbase Earn** | Established brand, crypto-native users | Limited topics, centralized | Educational focus, Stellar ecosystem |
 | **RabbitHole** | Web3 focus, task-based | Complex for beginners | Simpler content, emerging markets |
@@ -529,7 +529,7 @@ Planned surveys and interviews will explore:
 
 **Document prepared by:** 3m1n3nc3  
 **Contact:** [hi@toneflix.net](mailto:hi@toneflix.net)  
-**GitHub:** github.com/toneflix/learnault  
+**GitHub:** github.com/Kqirox/Orivex  
 **Twitter:** \[TBD\]
 
 ##  **Repository 2: Backend Engine (Node.js/Postgres/Redis)**

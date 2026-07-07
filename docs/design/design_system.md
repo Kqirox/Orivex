@@ -305,12 +305,13 @@ The email input field requires validation states with icon feedback. All inputs 
 ---
 
 ## 3. Textarea Fields (Description)
-The description textarea requires validation states and a character count/limit indicator. All textareas have a top label with a pencil icon.
 
-* **Default:** Light grey border, placeholder text ("Write description here..."). Includes info text below: "Max 200 texts".
-* **Focus/Active:** Purple/indigo border, user text entered. Includes info text below: "Max 200 texts".
-* **Filled/Inactive:** Light grey border, user text entered (faded text). Includes info text below: "Max 200 texts".
-* **Error:** Red border, red user text. Includes a red error icon and message below the field ("Reached the 200 text limit").
+The description textarea requires validation states and a character-count / limit indicator. All textareas have a top label with a pencil icon.
+
+* **Default** — `#E2E8F0` border, placeholder *"Write description here..."*, helper `"Max 200 texts"`.
+* **Focus / Active** — indigo border, learner text entered, helper `"Max 200 texts"`.
+* **Filled / Inactive** — `#E2E8F0` border, learner text entered (faded), helper `"Max 200 texts"`.
+* **Error** — `#DC2626` border, `#DC2626` text, red error icon, message `"Reached the 200 text limit"`.
 
 ---
 

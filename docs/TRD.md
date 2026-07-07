@@ -126,7 +126,7 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 
 * Needs: Junior developers with verified skills  
 * Pain point: Can't trust resumes, interviews are time-consuming  
-* Solution: Search Learnault's verified talent pool
+* Solution: Search Orivex's verified talent pool
 
 **Persona: Global Remote Work Platform**
 

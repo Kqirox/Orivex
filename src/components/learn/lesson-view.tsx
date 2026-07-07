@@ -32,7 +32,7 @@ export const MOCK_LESSON: Lesson = {
     {
       heading: "Wallets and keys",
       image: {
-        src: "/assets/why-learnault/digital-wallet.svg",
+        src: "/assets/why-orivex/digital-wallet.svg",
         alt: "A digital wallet",
       },
       body: [
@@ -42,9 +42,9 @@ export const MOCK_LESSON: Lesson = {
     },
     {
       heading: "Earning while you learn",
-      image: { src: "/assets/why-learnault/earn.svg", alt: "A reward coin" },
+      image: {        src: "/assets/why-orivex/earn.svg", alt: "A reward coin" },
       body: [
-        "On Learnault you finish short lessons and quizzes to earn XLM rewards.",
+        "On Orivex you finish short lessons and quizzes to earn XLM rewards.",
         "Your progress is recorded on Stellar, giving you verifiable proof of what you have learned.",
       ],
     },

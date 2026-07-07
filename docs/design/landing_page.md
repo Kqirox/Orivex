@@ -277,7 +277,7 @@ Figma File: [figma](https://www.figma.com/design/LGsY81Bp8oUSwuc2IxIEEG/Learnaul
 ## Footer Section
 🎯 The Job Done
 
-This PR delivers the structured footer for Learnault, providing navigation, resources, and platform credibility.
+This PR delivers the structured footer for Orivex, providing navigation, resources, and platform credibility.
 
 ## Deliverables Completed:
 

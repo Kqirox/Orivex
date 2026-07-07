@@ -25,7 +25,9 @@ const Hero = () => {
           <h1
             className={`${syne.className} max-w-[450px] text-2xl leading-[1.02] font-bold text-text-primary sm:text-6xl`}
           >
-            Build Your Skills & Earn.
+            Build Your Skills.
+            <br />
+            Earn on Stellar.
           </h1>
 
           <p className="max-w-md text-sm sm:leading-7 text-text-secondary sm:text-lg">

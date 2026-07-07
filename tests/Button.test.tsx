@@ -46,9 +46,8 @@ describe("Button", () => {
 
   it("exposes a keyboard-visible focus ring", () => {
     render(<Button>x</Button>);
-    expect(screen.getByRole("button").className).toMatch(
-      /focus-visible:ring-2/
-    );
+    const btn = screen.getByRole('button');
+    expect(btn.className).toMatch(/focus-visible:ring-2/);
   });
 
   it("is non-interactive and marked disabled when disabled", () => {

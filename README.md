@@ -23,7 +23,7 @@ A world where anyone, anywhere can access quality education, earn while learning
 | Package                                                         | Description                                     | Tech Stack                           |
 | :-------------------------------------------------------------- | :---------------------------------------------- | :----------------------------------- |
 | [`contracts`](https://github.com/Kqirox/Orivex-contracts) | Soroban smart contracts for credential issuance | Rust, Soroban                        |
-| [`api`](https://github.com/learnault/learnault-api)             | Backend API for user management and rewards     | Node.js, Express, PostgreSQL         |
+| [`api`](https://github.com/Kqirox/Orivex-api)             | Backend API for user management and rewards     | Node.js, Express, PostgreSQL         |
 | [`app`](https://github.com/learnault/learnault)                 | Mobile-first PWA frontend                       | React, Next.js, TypeScript, Tailwind |
 
 ## Architecture
@@ -58,7 +58,7 @@ For detailed architecture, see [ARCHITECTURE.md](./docs/ARCHITECTURE.md).
 
 ```bash
 # Clone the repository
-git clone https://github.com/learnault/learnault-api.git
+git clone https://github.com/Kqirox/Orivex-api.git
 cd learnault-api
 
 # Install dependencies

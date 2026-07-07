@@ -478,7 +478,7 @@ Orivex will be built as open source, inviting contributions for:
 
 | Category | Module Title | Reward | Duration |
 | :---- | :---- | :---- | :---- |
-| **Financial Literacy** | What is a Digital Wallet? | $0.25 | 10 min |
+| **Financial Literacy** | What is a Digital Wallet?           | $0.25  | 10 min   |
 |  | Understanding Stablecoins (USDC) | $0.25 | 12 min |
 |  | Sending Money Across Borders | $0.50 | 15 min |
 |  | Saving vs. Spending | $0.25 | 10 min |

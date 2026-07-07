@@ -63,7 +63,7 @@ I designed custom, lightweight yellow line icons. This prevents the section from
 ## How It Works Section
 🎯 The Job Done
 
-This PR delivers the high-fidelity UI for the “How It Works” section, designed to clearly communicate Learnault’s core product loop in a simple, step-by-step format.
+This PR delivers the high-fidelity UI for the “How It Works” section, designed to clearly communicate Orivex’s core product loop in a simple, step-by-step format.
 
 ## Deliverables Completed:
 

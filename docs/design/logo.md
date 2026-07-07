@@ -2,7 +2,7 @@
 
 ## Concept
 
-The Orivex logo combines a quarter coin and the letter "O" to represent the platform’s core idea:
+The Orivex logo combines a quarter coin and a stylized brand initial to represent the platform’s core idea:
 
 Learn → Earn
 
@@ -18,11 +18,11 @@ The curved form represents ¼ of a coin, symbolizing:
 
 It reflects Orivex’s Learn-to-Earn model, where users earn as they complete learning milestones.
 
-### Letter "L"
-The geometric structure forms the letter "L" for:
-- Orivex
-- Learning
-- Leverage
+### Brand Initial
+The geometric structure forms the brand’s first-letter monogram, signaling:
+- The Orivex brand
+- Learning as the foundation
+- Leverage across markets
 
 It represents structure, curriculum, and foundational growth.
 

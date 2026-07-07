@@ -19,8 +19,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Orivex",
-  description: "Decentralized learn-to-earn platform on Stellar - earn verifiable credentials while building real-world skills",
+  title: "Orivex - Learn. Earn. Verify.",
+  description:
+    "Orivex is the decentralized learn-to-earn platform on Stellar. Earn USDC / XLM and build portable on-chain credentials for every milestone.",
+  keywords: ["Orivex", "learn-to-earn", "Stellar", "Soroban", "education"],
+  authors: [{ name: "Orivex Contributors" }],
 };
 
 export default function RootLayout({

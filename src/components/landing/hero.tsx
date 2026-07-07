@@ -67,7 +67,7 @@ const Hero = () => {
         <div className="order-1 mx-auto w-full max-w-[360px] lg:order-2 lg:max-w-[524px] lg:justify-self-center">
           <Image
             src={heroPeople}
-            alt="Learners on Learnault"
+            alt="Learners on Orivex"
             width={524}
             height={619}
             priority

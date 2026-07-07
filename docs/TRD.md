@@ -27,7 +27,7 @@
 
 ## **EXECUTIVE SUMMARY**
 
-**Learnault** is a decentralized, learn-to-earn educational platform built on the Stellar blockchain that democratizes access to financial literacy and digital skills while creating verifiable, portable credentials for learners worldwide.
+**Orivex** is a decentralized, learn-to-earn educational platform built on the Stellar blockchain that democratizes access to financial literacy and digital skills while creating verifiable, portable credentials for learners worldwide.
 
 The platform incentivizes learning through small Stellar-based token rewards, addresses the global skills gap, and creates a sustainable business model by monetizing verified learner data for employers and institutions—all while keeping the learning experience completely free for users.
 

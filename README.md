@@ -113,4 +113,4 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 ## Contact
 
 - Discord: [Join our community](https://discord.gg)
-- Email: orivex@toneflix.net
+- Email: [hello@orivex.network](mailto:hello@orivex.network)

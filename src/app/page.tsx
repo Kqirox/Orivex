@@ -27,3 +27,10 @@ const Home = () => {
 };
 
 export default Home;
+
+// Order rationale: the page reads top-to-bottom from a learner's first
+// impression (Hero) through the gamified quest hooks (QuestPaths +
+// HowItWorks), the platform's value proposition (WhyOrivex +
+// LearningPaths), social proof (Testimonial), reduced-friction objection
+// handling (FAQ + ValueProposition), and finally the persistent
+// navigation footer.

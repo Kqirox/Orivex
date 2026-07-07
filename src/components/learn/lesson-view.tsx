@@ -3,11 +3,11 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/Button";
 
-// Frontend/design only — static mock content, no fetching/backend.
+// Frontend/design only - static mock content, no fetching/backend.
 
 export interface LessonStep {
   heading: string;
-  /** Lightweight illustration — kept as a plain <img> for low-bandwidth. */
+  /** Lightweight illustration - kept as a plain <img> for low-bandwidth. */
   image: { src: string; alt: string };
   /** Short, simple-language paragraphs optimised for readability. */
   body: string[];
@@ -25,7 +25,7 @@ export const MOCK_LESSON: Lesson = {
       heading: "What is the Stellar network?",
       image: { src: "/assets/learning-paths/global.svg", alt: "A connected globe" },
       body: [
-        "Stellar is an open network that lets people send money across the world in seconds.",
+        "The Stellar network is an open ledger that lets people send money across the world in seconds.",
         "Instead of one company being in charge, many computers keep a shared record of every payment.",
       ],
     },
@@ -37,7 +37,7 @@ export const MOCK_LESSON: Lesson = {
       },
       body: [
         "A wallet holds your funds and your keys. Your public key is like an address you can share.",
-        "Your secret key is private — it proves the account is yours, so never share it with anyone.",
+        "Your secret key is private - it proves the account is yours, so never share it with anyone.",
       ],
     },
     {

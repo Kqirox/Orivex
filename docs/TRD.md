@@ -489,7 +489,7 @@ Orivex will be built as open source, inviting contributions for:
 
 ### **B: Competitive Analysis**
 
-| Competitor | Strengths | Weaknesses | Learnault Advantage |
+| Competitor | Strengths | Weaknesses | Orivex Advantage |
 | :---- | :---- | :---- | :---- |
 | **Coinbase Earn** | Established brand, crypto-native users | Limited topics, centralized | Educational focus, Stellar ecosystem |
 | **RabbitHole** | Web3 focus, task-based | Complex for beginners | Simpler content, emerging markets |

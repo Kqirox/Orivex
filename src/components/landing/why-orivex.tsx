@@ -16,42 +16,42 @@ const reasons: Reason[] = [
   {
     title: "Earn While Learning",
     description:
-      "Complete courses and earn LEARN tokens that have real value on the Stellar blockchain.",
-    icon: "/assets/why-learnault/earn.svg",
+      "Complete courses and earn Orivex tokens that have real value on the Stellar blockchain.",
+    icon: "/assets/why-orivex/earn.svg",
   },
   {
     title: "On-chain Credentials",
     description:
       "Receive verifiable certificates that employers can instantly validate.",
-    icon: "/assets/why-learnault/protection.svg",
+    icon: "/assets/why-orivex/protection.svg",
   },
   {
     title: "Global Community",
     description:
       "Connect with learners and employers from Africa, Latin America, and Southeast Asia.",
-    icon: "/assets/why-learnault/community.svg",
+    icon: "/assets/why-orivex/community.svg",
   },
   {
     title: "Secure Wallets",
     description:
       "Your earnings are safely stored in Stellar wallets that you control.",
-    icon: "/assets/why-learnault/digital-wallet.svg",
+    icon: "/assets/why-orivex/digital-wallet.svg",
   },
   {
     title: "Quick Payouts",
     description:
       "Withdraw your earnings anytime with fast, low-fee blockchain transactions.",
-    icon: "/assets/why-learnault/payouts.svg",
+    icon: "/assets/why-orivex/payouts.svg",
   },
   {
     title: "No Borders",
     description:
       "Access opportunities regardless of your location or financial background.",
-    icon: "/assets/why-learnault/global.svg",
+    icon: "/assets/why-orivex/global.svg",
   },
 ];
 
-const WhyLearnault = () => {
+const WhyOrivex = () => {
   return (
     <section className="bg-secondary-background px-4 py-20 sm:px-6 lg:px-8 lg:py-35.5">
       <div className="mx-auto max-w-260">
@@ -101,5 +101,5 @@ const WhyLearnault = () => {
   );
 };
 
-export default WhyLearnault;
+export default WhyOrivex;
 

@@ -40,9 +40,9 @@ export default function LoginPage() {
         {/* Logo */}
         <div className="mb-6 flex items-center justify-center gap-2 sm:justify-start">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/assets/logo-icon.svg" alt="Learnault" className="h-7 w-7" />
+          <img src="/assets/logo-icon.svg" alt="Orivex" className="h-7 w-7" />
           <span className="font-heading text-[18px] font-bold text-[#0F172A]">
-            Learnault
+            Orivex
           </span>
         </div>
 
@@ -103,7 +103,7 @@ export default function LoginPage() {
           </form>
 
           <p className="mt-6 text-center text-sm text-[#475569]">
-            New to Learnault?{" "}
+            New to Orivex?{" "}
             <a
               href="/signup"
               className="font-medium text-[#14B8A6] hover:underline"

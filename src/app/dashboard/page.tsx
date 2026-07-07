@@ -90,7 +90,7 @@ const MOCK_PATHS = [
 ];
 
 export const metadata = {
-  title: "Dashboard — Learnault",
+  title: "Dashboard — Orivex",
   description: "Your learning journey at a glance",
 };
 

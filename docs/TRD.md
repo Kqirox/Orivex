@@ -526,7 +526,7 @@ Planned surveys and interviews will explore:
    * Month 6+: Public launch and community growth
 
 ---**Document prepared by:** Orivex Contributors  
-**Contact:** [orivex@toneflix.net](mailto:orivex@toneflix.net)  
+**Contact:** [hello@orivex.network](mailto:hello@orivex.network)
 **GitHub:** github.com/Kqirox/Orivex  
 **Twitter:** \[TBD\] 
 

@@ -524,7 +524,7 @@ Planned surveys and interviews will explore:
    * Conduct user research (50+ interviews)  
    * Complete technical architecture document  
    * Begin content development  
-   * Build landing page for early signups  
+   * Refresh the landing page for early signups
 3. **After Funding**  
    * Month 1-2: Prototype with basic wallet integration  
    * Month 3-4: MVP with 5 modules and reward distribution  

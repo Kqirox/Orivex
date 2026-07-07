@@ -256,7 +256,7 @@ function StepWelcome({ email, onDone }: { email: string; onDone: () => void }) {
           You&apos;re in!
         </h1>
         <p className="mt-1 text-sm text-[#475569]">
-          Welcome to Learnault, <span className="font-medium text-[#0F172A]">{email}</span>
+          Welcome to Orivex, <span className="font-medium text-[#0F172A]">{email}</span>
         </p>
       </div>
 
@@ -307,9 +307,9 @@ export default function SignupPage() {
         {/* Logo */}
         <div className="mb-6 flex items-center gap-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/assets/logo-icon.svg" alt="Learnault" className="h-7 w-7" />
+          <img src="/assets/logo-icon.svg" alt="Orivex" className="h-7 w-7" />
           <span className={`${syne.className} text-[18px] font-bold text-[#0F172A]`}>
-            Learnault
+            Orivex
           </span>
         </div>
 

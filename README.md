@@ -22,7 +22,7 @@ A world where anyone, anywhere can access quality education, earn while learning
 
 | Package                                                         | Description                                     | Tech Stack                           |
 | :-------------------------------------------------------------- | :---------------------------------------------- | :----------------------------------- |
-| [`contracts`](https://github.com/learnault/learnault-contracts) | Soroban smart contracts for credential issuance | Rust, Soroban                        |
+| [`contracts`](https://github.com/Kqirox/Orivex-contracts) | Soroban smart contracts for credential issuance | Rust, Soroban                        |
 | [`api`](https://github.com/learnault/learnault-api)             | Backend API for user management and rewards     | Node.js, Express, PostgreSQL         |
 | [`app`](https://github.com/learnault/learnault)                 | Mobile-first PWA frontend                       | React, Next.js, TypeScript, Tailwind |
 

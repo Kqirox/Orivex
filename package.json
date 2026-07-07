@@ -1,8 +1,8 @@
 {
-    "name": "learnault",
+    "name": "orivex",
     "version": "0.1.0",
     "private": true,
-    "description": "Decentralized learn-to-earn platform on Stellar",
+    "description": "Decentralized learn-to-earn platform on Stellar — earn verifiable credentials while building real-world skills",
     "keywords": [
         "stellar",
         "education",
@@ -10,13 +10,13 @@
         "learn-to-earn",
         "soroban"
     ],
-    "homepage": "https://github.com/learnault/learnault",
+    "homepage": "https://github.com/Kqirox/Orivex",
     "repository": {
         "type": "git",
-        "url": "https://github.com/learnault/learnault.git"
+        "url": "https://github.com/Kqirox/Orivex.git"
     },
     "license": "MIT",
-    "author": "Learnault Contributors",
+    "author": "Orivex Contributors",
     "scripts": {
         "dev": "next dev",
         "lint": "eslint",

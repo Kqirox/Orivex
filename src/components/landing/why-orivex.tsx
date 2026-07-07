@@ -16,7 +16,7 @@ const reasons: Reason[] = [
   {
     title: "Earn While Learning",
     description:
-      "Complete courses and earn Orivex tokens that have real value on the Stellar blockchain.",
+      "Complete courses and earn USDC / XLM token rewards on the Stellar blockchain.",
     icon: "/assets/why-orivex/earn.svg",
   },
   {

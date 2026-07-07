@@ -390,7 +390,7 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
 
 ### **Open Source Contributors**
 
-Learnault will be built as open source, inviting contributions for:
+Orivex will be built as open source, inviting contributions for:
 
 * Translations (community-led localization)  
 * Additional learning modules  

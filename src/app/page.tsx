@@ -9,15 +9,19 @@ import QuestPaths from "@/components/landing/quest-paths";
 
 const Home = () => {
   return (
-    <main>
+    <main aria-labelledby="orivex-home">
+      <h1 id="orivex-home" className="sr-only">
+        Orivex - Learn. Earn. Verify.
+      </h1>
       <Hero />
       <QuestPaths />
+      <HowItWorks />
       <WhyOrivex />
       <LearningPaths />
       <Testimonial />
       <FAQ />
-      <ValueProposition/>
-       <Footer/>
+      <ValueProposition />
+      <Footer />
     </main>
   );
 };

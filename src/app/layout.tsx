@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import { Syne, Inter } from "next/font/google";
 import "./globals.css";
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+} as const;
+
 const syne = Syne({
   variable: "--font-syne",
   subsets: ["latin"],
@@ -15,7 +20,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Orivex",
-  description: "Decentralized learn-to-earn platform on Stellar — earn verifiable credentials while building real-world skills",
+  description: "Decentralized learn-to-earn platform on Stellar - earn verifiable credentials while building real-world skills",
 };
 
 export default function RootLayout({

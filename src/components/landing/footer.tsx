@@ -53,8 +53,7 @@ const Footer = () => {
             </Link>
 
             <p className="mb-7 max-w-[220px] text-sm leading-7 text-text-muted">
-              Decentralized learn-to-earn platform on Stellar. Build skills, earn
-              rewards, and prove your knowledge.
+              Decentralized learn-to-earn platform on the Stellar blockchain. Build skills, earn USDC / XLM rewards, and prove your knowledge with portable, on-chain credentials.
             </p>
 
 

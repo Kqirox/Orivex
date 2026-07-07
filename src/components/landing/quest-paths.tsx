@@ -99,7 +99,7 @@ const QuestPaths = () => {
               className="rounded-[24px] bg-surface px-8 py-3 text-base font-semibold text-text-primary transition-shadow hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               style={{ fontFamily: poppins.style.fontFamily, fontWeight: 600 }}
             >
-              Start Learning
+              Start Earning
             </button>
           </div>
 

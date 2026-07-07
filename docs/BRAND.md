@@ -28,8 +28,8 @@ Every learner-facing surface should expose:
 
 - ❌ Comparisons that frame traditional education as "broken".
 - ❌ Crypto jargon without an inline plain-language gloss on first use.
-- ❌ Email addresses that point at a previous-org domain (e.g. `toneflix.net`).
-- ❌ External design system URLs (e.g. `figma.com/file/…`) in tracked files.
+- ❌ Email addresses that point at a previous-org domain (e.g. older `.net` vanity domains).
+- ❌ External design-system URLs in tracked files — assets, designs, and tokens live inside the repo or in the design-system doc.
 
 ## How to Update this Guide
 

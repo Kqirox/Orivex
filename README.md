@@ -23,11 +23,11 @@ Orivex turns self-directed learning into an investable activity: every minute sp
 
 ## Packages
 
-| Package                                                         | Description                                     | Tech Stack                           |
-| :-------------------------------------------------------------- | :---------------------------------------------- | :----------------------------------- |
-| [`contracts`](https://github.com/Kqirox/Orivex-Contracts) | Soroban smart contracts for credential issuance | Rust, Soroban                        |
-| [`backend`](https://github.com/Kqirox/Orivex-Backend)     | Backend API for user management and rewards     | Node.js, Express, PostgreSQL         |
-| [`app`](https://github.com/Kqirox/Orivex)                 | Mobile-first PWA frontend                       | React, Next.js, TypeScript, Tailwind |
+| Package                                                            | Description                                       | Tech Stack                              |
+| :----------------------------------------------------------------- | :------------------------------------------------ | :-------------------------------------- |
+| [`contracts`](https://github.com/Kqirox/Orivex-Contracts)         | Soroban smart contracts for credential issuance   | Rust, Soroban                           |
+| [`backend`](https://github.com/Kqirox/Orivex-Backend)             | Backend API for users, modules, wallets, rewards  | Node.js, Express, PostgreSQL, Redis     |
+| [`app`](https://github.com/Kqirox/Orivex)                         | Mobile-first PWA frontend (this repository)       | React, Next.js, TypeScript, Tailwind v4 |
 
 ## Architecture
 

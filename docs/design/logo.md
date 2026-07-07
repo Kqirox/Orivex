@@ -1,8 +1,8 @@
-# Learnault Logo Rationale
+# Orivex Logo Rationale
 
 ## Concept
 
-The Learnault logo combines a quarter coin and the letter "L" to represent the platform’s core idea:
+The Orivex logo combines a quarter coin and the letter "O" to represent the platform’s core idea:
 
 Learn → Earn
 
@@ -16,11 +16,11 @@ The curved form represents ¼ of a coin, symbolizing:
 - Incremental earnings
 - Progress through stages
 
-It reflects Learnault’s Learn-to-Earn model, where users earn as they complete learning milestones.
+It reflects Orivex’s Learn-to-Earn model, where users earn as they complete learning milestones.
 
 ### Letter "L"
 The geometric structure forms the letter "L" for:
-- Learnault
+- Orivex
 - Learning
 - Leverage
 

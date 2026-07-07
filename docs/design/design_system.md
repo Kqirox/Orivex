@@ -1,6 +1,6 @@
-# Learnault Design System
+# Orivex Design System
 
-A light-mode-first design system for the **Learnault Learn-to-Earn platform**.  
+A light-mode-first design system for the **Orivex Learn-to-Earn platform**.  
 The aesthetic focuses on clarity, accessibility, and high-contrast CTAs suitable for educational content and Web3 interfaces.
 
 ---
@@ -247,7 +247,7 @@ Accessible
 Reward-driven  
 Web3-native  
 
-The system reflects Learnault’s mission:
+The system reflects Orivex’s mission:
 
 **Learning that converts directly into measurable value.**
 

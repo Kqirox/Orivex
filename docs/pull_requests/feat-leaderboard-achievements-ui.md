@@ -2,7 +2,7 @@
 
 ## Summary
 
-Implements the `Leaderboard`, `Badge`, and `Achievements` UI components per the Learnault design system. These components cover the gamification layer described in the TRD (streaks, badges, leaderboards).
+Implements the `Leaderboard`, `Badge`, and `Achievements` UI components per the Orivex design system. These components cover the gamification layer described in the TRD (streaks, badges, leaderboards).
 
 ## Changes
 

@@ -10,7 +10,8 @@ Learn → Earn
 
 ## Symbol Meaning
 
-### Quarter Coin
+### Quarter Coin (Reward layer)
+
 The curved form represents ¼ of a coin, symbolizing:
 - Financial rewards
 - Incremental earnings

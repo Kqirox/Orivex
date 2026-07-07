@@ -28,11 +28,11 @@ It represents structure, curriculum, and foundational growth.
 
 ### Square Block
 The small square at the base symbolizes:
-- A completed module
-- A building block of knowledge
-- A digital block (blockchain infrastructure)
+- A completed module (the smallest unit of progress)
+- A building block of knowledge (compounding across tiers)
+- A digital block (blockchain infrastructure - Soroban under the hood)
 
-Each lesson contributes to measurable reward.
+Each lesson contributes to a measurably larger reward.
 
 ---
 

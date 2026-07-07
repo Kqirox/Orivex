@@ -20,8 +20,11 @@ echo
 
 # 1. Old brand name in tracked files (case-insensitive)
 #    Use -I to skip binary files; -0/-z to handle weird filenames safely.
+#    Exclude the brand-guard files themselves — they need to LITERALLY
+#    mention these strings (as patterns + examples) to do their job.
 LEAKED_FILES=$(
   git ls-files -z 2>/dev/null \
+    | grep -zvE '^(scripts/check-brand\.sh|\.github/workflows/brand-guard\.yml)$' \
     | xargs -0 grep -nI -i 'learnault\|learnea' 2>/dev/null \
     || true
 )
@@ -35,8 +38,10 @@ fi
 
 # 2. External Figma URLs in tracked files. We deliberately removed all
 #    figma.com links during the rebrand — if any sneak back, fail loudly.
+#    Same self-exclusion pattern as above.
 LEAKED_FIGMA=$(
   git ls-files -z 2>/dev/null \
+    | grep -zvE '^(scripts/check-brand\.sh|\.github/workflows/brand-guard\.yml)$' \
     | xargs -0 grep -nI 'figma\.com' 2>/dev/null \
     || true
 )

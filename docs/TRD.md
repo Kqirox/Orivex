@@ -27,9 +27,11 @@
 
 ## **EXECUTIVE SUMMARY**
 
-**Orivex** is a decentralized, learn-to-earn educational platform built on the Stellar blockchain that democratizes access to financial literacy and digital skills while creating verifiable, portable credentials for learners worldwide.
+**Orivex** is the decentralized learn-to-earn platform on the Stellar blockchain. We equip learners in emerging markets with financial-literacy and digital-skills training and pay them small but real cryptocurrency rewards for every milestone they complete.
 
-The platform incentivizes learning through small Stellar-based token rewards, addresses the global skills gap, and creates a sustainable business model by monetizing verified learner data for employers and institutions—all while keeping the learning experience completely free for users.
+Every credential is anchored on-chain, so learners own a portable skill graph that follows them for life.
+
+The platform incentivizes learning through small Stellar-based token rewards, addresses the global skills gap, and creates a sustainable business model by monetizing verified learner data for employers and institutions-all while keeping the learning experience completely free for users.
 
 **Core Value Proposition:**
 
@@ -50,7 +52,7 @@ The platform incentivizes learning through small Stellar-based token rewards, ad
    * Quality educational content is often paywalled or unavailable in local languages  
    * Traditional credentials are expensive and not easily portable across borders  
 2. **The Skills Mismatch:**  
-   * Employers struggle to verify candidate skills—85% of employers have caught lies on resumes (ResumeLab)  
+   * Employers struggle to verify candidate skills-85% of employers have caught lies on resumes (ResumeLab)  
    * 87% of companies know they have a skills gap or will have one within a few years (McKinsey)  
    * Traditional degrees don't always reflect current, practical knowledge  
 3. **Financial Inclusion Challenges:**  

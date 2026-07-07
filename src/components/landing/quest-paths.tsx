@@ -79,11 +79,11 @@ const QuestPaths = () => {
         <div className="flex flex-col items-center gap-10 lg:flex-row lg:items-center lg:gap-12">
           {/* Left column */}
           <div className="w-full space-y-6 lg:w-1/2">
-            <h1
+            <h2
               className={`${bricolage.className} max-w-[500px] text-[32px] leading-[1.2] font-bold tracking-[-0.5px] text-text-primary sm:text-[40px] lg:text-[52px]`}
             >
-              Complete your tier, Unlock quest and Earn more.
-            </h1>
+              Complete a tier. Unlock the next. Earn more.
+            </h2>
 
             <p
               className="max-w-[450px] text-base leading-[1.6] text-text-secondary"
@@ -103,13 +103,13 @@ const QuestPaths = () => {
             </button>
           </div>
 
-          {/* Right column — Stellar graphic */}
+          {/* Right column - Stellar graphic */}
           <div className="relative flex w-full items-center justify-center lg:w-1/2">
             <div
               className="quest-swoosh relative h-[420px] w-[420px] motion-reduce:animate-none sm:h-[480px] sm:w-[480px]"
               style={{ animation: "floatY 3s ease-in-out infinite" }}
             >
-              {/* Stellar logo — white, fills the container */}
+              {/* Stellar logo - white, fills the container */}
               <Image
                 src="/stellar.svg"
                 alt="Stellar"
@@ -119,7 +119,7 @@ const QuestPaths = () => {
                 aria-hidden="true"
               />
 
-              {/* Reward labels — dark prefix + green amount, no icon */}
+              {/* Reward labels - dark prefix + green amount, no icon */}
               {rewardLabels.map((label) => (
                 <div
                   key={label.id}
